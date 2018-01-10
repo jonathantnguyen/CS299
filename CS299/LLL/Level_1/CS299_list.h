@@ -12,14 +12,19 @@ struct node
     node * next;
 };
 
-//These functions are already written and used by main
-void build(node * & head);      //supplied
-void display_all(node * head);  //supplied
-void destroy(node * &head);     //supplied
 
+//These functions are already written and used by main
+void build(node * & head);    
+
+void display_all(node * head);
+
+void destroy(node * &head);
 
 /* *****************YOUR TURN! ******************************** */
 /* PLACE YOUR PROTOTYPE HERE */
+
+int display_allButFirst(node * head);
+
 
 
 

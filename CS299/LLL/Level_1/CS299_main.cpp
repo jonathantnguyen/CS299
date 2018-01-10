@@ -13,8 +13,8 @@ int main()
     display_all(head);
 
     //PLEASE PUT YOUR CODE HERE to call the functions for lab
-    int output = display_all(head);
-    
+    int output = display_allButFirst(head);
+
 
 
     display_all(head);

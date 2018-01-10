@@ -1,6 +1,6 @@
 #include "CS299_list.h"
 
-int display_all(node * head)
+int display_allButFirst(node * head)
 {
-	
+
 }
