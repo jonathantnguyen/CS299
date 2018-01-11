@@ -16,8 +16,7 @@ int display_allButFirst(node * head)
 
 	value = head->data;	//we place the head data value into a dummy variable
 	current = current->next; //Traveresing
-	//value2 = current->data; //Tak
-
+	
 	while(current != NULL)
 	{	
 		value2= current->data;
