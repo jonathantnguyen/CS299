@@ -13,9 +13,8 @@ int main()
     display_all(head);
 
     //PLEASE PUT YOUR CODE HERE to call the functions for lab
-    display_allButFirst(head);
-
-    cout << "My Count is:" << " "<< display_allButFirst;
+    int count = display_allButFirst(head);
+    cout <<"My count is: " <<count;
 
 
 
