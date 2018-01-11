@@ -10,12 +10,12 @@ int display_allButFirst(node * head)
 	value = head->data;
 	cout << value << endl;
 	current = current->next;
-	value2 = curent->data;
+	value2 = current->data;
 
-	while(current != null)
+	while(current != NULL)
 	{	
-		value2= next->data;
-		if (head != value2)
+		value2= current->next->data;
+		if (value != value2)
 		{
 			cout << value2 << endl;
 		}
@@ -23,5 +23,4 @@ int display_allButFirst(node * head)
 		
 	}
 
-return 0;
 }
