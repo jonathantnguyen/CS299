@@ -2,23 +2,27 @@
 
 int display_allButFirst(node * head)
 {
-	// Making sure all pointers are pointing to nothing
-	node * current;
+	node * current = head;
 
 	int value;
 	int value2;
 
 	value = head->data;
+	cout << value << endl;
 	current = current->next;
-	value2 = next->data;
+	value2 = curent->data;
 
-	while(value != value2)
-	{
-		cout << value2 << endl;
-		current = current->next;
+	while(current != null)
+	{	
 		value2= next->data;
+		if (head != value2)
+		{
+			cout << value2 << endl;
+		}
+		current = current->next;
+		
 	}
 
 
-
 }
+return 0;
