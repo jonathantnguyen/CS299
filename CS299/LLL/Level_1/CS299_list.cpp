@@ -43,9 +43,6 @@ int dataGTLastNode(node * head)
 	int tailValue;
 	int total = 0;
 
-	headValue = head->data;
-	current = current->next;
-
 	//Getting to the tail of the list
 
 	while(current != NULL)
