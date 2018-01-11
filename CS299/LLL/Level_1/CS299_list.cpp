@@ -66,6 +66,7 @@ int dataGTLastNode(node * head)
 		sumTemp = current->data;
 		if (sumTemp > tailValue)
 		{
+			cout << sumTemp << endl;
 			total += sumTemp;
 		}
 
