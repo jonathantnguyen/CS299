@@ -62,7 +62,7 @@ int dataGTLastNode(node * head)
 	//Going back to compare
 	current = head;
 
-	while (current! = NULL)
+	while (current != NULL)
 	{
 		sumTemp = current->data;
 		if (sumTemp > tailValue)
