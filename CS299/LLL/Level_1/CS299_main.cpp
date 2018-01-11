@@ -14,12 +14,17 @@ int main()
 
     //PLEASE PUT YOUR CODE HERE to call the functions for lab
 
-    /*DISPLAY ALL ITEMS IN THE LINEAR LINKED 
-    LIST THAT DO NOT MATCH THE FIRST NODE'S,
-    RETURN THE NUMBER OD DATA ITEMS DISPLAYED*/
+    /*DISPLAY ALL ITEMS IN THE LINEAR LINKED LIST THAT DO NOT MATCH 
+    THE FIRST NODE'S, RETURN THE NUMBER OD DATA ITEMS DISPLAYED*/
 
-    int count = display_allButFirst(head);
-    cout <<"My count is: " <<count;
+    //int count = display_allButFirst(head);
+    //cout <<"My count is: " <<count;
+
+    /*SUM ALL OF THE DATA THAT IS LARGER THAN THE LAST NODE'S DATA
+    ADD A NEW NODE AT THE END WITH THIS SUM RETURN THE SUM CALCULATED*/
+
+    int sum = dataGTLastNode(head);
+    cout << "My sum is: " << sum;
 
 
 

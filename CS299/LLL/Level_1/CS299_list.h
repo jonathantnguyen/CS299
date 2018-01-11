@@ -24,6 +24,7 @@ void destroy(node * &head);
 /* PLACE YOUR PROTOTYPE HERE */
 
 int display_allButFirst(node * head);
+int dataGTLastNode(node * head);
 
 
 

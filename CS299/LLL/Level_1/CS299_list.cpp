@@ -3,7 +3,6 @@
 int display_allButFirst(node * head)
 {
 	
-
 	if (!head) //Check if head is NULL/EMPTY LIST
 	{
 		return 0; //If so, kick out
@@ -17,7 +16,7 @@ int display_allButFirst(node * head)
 	value = head->data;	//we place the head data value into a dummy variable
 	current = current->next; //Traveresing
 	
-	while(current != NULL)
+	while(current != NULL) //Checking that it's not at the end of a list
 	{	
 		value2= current->data;
 		if (value != value2)	//If the head value doesn't equal current node value
@@ -25,15 +24,37 @@ int display_allButFirst(node * head)
 			cout << value2 << endl;
 			i++;					// increment counter 
 		}
-		current = current->next;
+		current = current->next; //traverse to next node
 		
 	}
 
-return i;
+return i; 
 }
 
 int dataGTLastNode(node * head)
 {
+	if(!head)
+	{
+		return 0;
+	}
 
-return 0;
+	node * current = head;
+	int sumTemp;
+	int headValue;
+	int total = 0;
+
+	headValue = head->data;
+	current = current->next;
+
+	while (current != NULL)
+	{
+		sumTemp = current->data;
+		if( sumTemp > headValue)
+		{
+			total += sumTemp;
+		}
+		current = current->next;
+	}
+
+return total;
 }
