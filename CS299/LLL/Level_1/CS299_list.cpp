@@ -3,12 +3,14 @@
 int display_allButFirst(node * head)
 {
 	node * current = head;
-
+	int i = 0;
 	int value;
 	int value2;
-
+	if (head ==NULL)
+	{
+		return 0;
+	}
 	value = head->data;
-	cout << value << endl;
 	current = current->next;
 	value2 = current->data;
 
@@ -18,10 +20,11 @@ int display_allButFirst(node * head)
 		if (value != value2)
 		{
 			cout << value2 << endl;
+			i++;
 		}
 		current = current->next;
 		
 	}
 
-return 0;
+return i;
 }
