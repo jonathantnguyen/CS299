@@ -23,6 +23,5 @@ int display_allButFirst(node * head)
 		
 	}
 
-
-}
 return 0;
+}
