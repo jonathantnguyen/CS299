@@ -9,7 +9,7 @@ int main()
     //This code sets up the list
     node * head = NULL;
 
-    build(head);
+    //build(head);
     display_all(head);
 
     //PLEASE PUT YOUR CODE HERE to call the functions for lab
