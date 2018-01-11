@@ -51,7 +51,6 @@ int dataGTLastNode(node * head)
 		while (current->next == NULL)
 		{
 			tailValue = current->data;
-			cout << tailValue<< endl;
 			break;
 		}
 
