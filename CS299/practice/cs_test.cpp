@@ -3,10 +3,22 @@
  
 using namespace std;
 
-int main(){
+int main()
+{
 
+	int x;
 
-    cout << "Message" << endl;
+	cin >> x;
+
+	if (x > 0)
+	{
+		cout << x << endl;
+	}
+	else
+	{
+		cerr << "Entered a non-positive number." << endl;
+	}
+    
 
 
 
