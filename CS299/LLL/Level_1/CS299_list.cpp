@@ -14,7 +14,7 @@ int display_allButFirst(node * head)
 
 	while(current != NULL)
 	{	
-		value2= current->next->data;
+		value2= current->data;
 		if (value != value2)
 		{
 			cout << value2 << endl;
