@@ -40,21 +40,39 @@ int dataGTLastNode(node * head)
 
 	node * current = head;
 	int sumTemp;
-	int headValue;
+	int tailValue;
 	int total = 0;
 
 	headValue = head->data;
 	current = current->next;
 
-	while (current != NULL)
+	//Getting to the tail of the list
+
+	while(current != NULL)
+	{
+
+		while (current->next == NULL)
+		{
+			tailValue = current->data;
+		}
+
+		current = current->next;
+	}
+
+	//Going back to compare
+	current = head;
+
+	while (current! = NULL)
 	{
 		sumTemp = current->data;
-		if( sumTemp > headValue)
+		if (sumTemp > tailValue)
 		{
 			total += sumTemp;
 		}
+
 		current = current->next;
 	}
+
 
 return total;
 }
