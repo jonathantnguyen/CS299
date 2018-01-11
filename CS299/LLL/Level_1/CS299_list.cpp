@@ -36,4 +36,5 @@ return i;
 int dataGTLastNode(node * head)
 {
 
+return 0;
 }
