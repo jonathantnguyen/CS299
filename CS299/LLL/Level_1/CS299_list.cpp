@@ -4,7 +4,6 @@ int display_allButFirst(node * head)
 {
 	// Making sure all pointers are pointing to nothing
 	node * current;
-	node * temp;
 
 	int value;
 	int value2;
