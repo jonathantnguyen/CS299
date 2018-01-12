@@ -32,8 +32,14 @@ int main()
     THIS FUNCTION SHOULD RETURN TRUE IF ONE OF THE LAST TWO NODE'S APPEARS
     MORE THAN ONCE AND FALSE OTHERWISE.*/
 
-    statement = find_last_two(head);
-    cout << statement << endl;
+    int statement = find_last_two(head);
+    if(statement == 0){
+    	cout << "Does not contain a repeating value of the last 2 nodes." << endl;
+    }
+    else
+    {
+    	cout << "Does contain a repeating value of the last 2 nodes." << endl;
+    }
 
     display_all(head);
     destroy(head);    
