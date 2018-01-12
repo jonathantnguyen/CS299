@@ -109,7 +109,9 @@ bool find_last_two(node * head)
 	//Storing last known pointers to dummy variables
 
 	secondTLValue = secondTLNode->data;
+	cout << secondTLValue << endl;
 	lastValue = lastNode->data;
+	cout << lastValue << endl;
 
 	//Going back to compare values
 
