@@ -119,10 +119,12 @@ bool find_last_two(node * head)
 	int temp;
 	temp = current->data;
 	cout << "Head value: "<< temp << endl;
+	int i = 0;
+	int j = 0;
 
 	while(current != NULL && ((current != lastNode) || (current !=secondTLNode)))
 	{
-		int i;
+	
 		i++;
 		cout << i << endl;
 		
@@ -134,6 +136,8 @@ bool find_last_two(node * head)
 		}
 		else
 		{
+			j++;
+			cout << j << endl;
 			statement = false;
 		}
 		current = current->next;
