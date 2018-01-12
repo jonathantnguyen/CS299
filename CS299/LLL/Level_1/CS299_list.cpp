@@ -122,6 +122,8 @@ bool find_last_two(node * head)
 
 	while(current != NULL && ((current != lastNode) || (current !=secondTLNode)))
 	{
+
+		cout << i++ << endl;
 		
 		if ((lastValue || secondTLValue) == current->data)
 		{
