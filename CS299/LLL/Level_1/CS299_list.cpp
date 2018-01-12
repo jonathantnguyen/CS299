@@ -126,6 +126,7 @@ bool find_last_two(node * head)
 		{
 			statement = false;
 		}
+		current = current->next;
 	}
 
 return statement;
