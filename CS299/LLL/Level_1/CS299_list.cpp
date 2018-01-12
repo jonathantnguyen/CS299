@@ -28,7 +28,7 @@ int display_allButFirst(node * head)
 		
 	}
 
-return i; 
+	return i; 
 }
 
 int dataGTLastNode(node * head)
@@ -73,5 +73,50 @@ int dataGTLastNode(node * head)
 	}
 
 
-return total;
+	return total;
+}
+
+bool find_last_two(node * head)
+{
+	bool statement;
+	int lastValue;
+	int secondTLValue;
+
+
+	if(!head)
+	{
+		return 0;
+	}
+
+	node * current = head;
+	node * lastNode, * secondTLNode;
+
+	//Find the last two nodes
+
+	while(current != NULL)
+	{
+		secondTLNode = current; //Continues to store the pointer to the current data before traversing to the next node
+
+		while (current->next == NULL) //When the last node is found, but looking at it's NULL next
+		{
+			lastNode = current->data; //It will store the last node and break of the first while loops
+			break;
+		}
+
+		current = current->next;	//If it was the last node, it will kick out, if it's not it will continue to find the last node.
+	}
+
+	//Going back to compare values
+
+	current = head;
+
+	while(current != NULL && (current != lastNode || current !=secondTLNode))
+	{
+
+	}
+
+
+
+
+return statement;
 }
