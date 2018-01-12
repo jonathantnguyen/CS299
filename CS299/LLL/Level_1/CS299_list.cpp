@@ -128,7 +128,7 @@ bool find_last_two(node * head)
 		i++;
 		cout <<"loop: " <<i << endl;
 		
-		if ((lastValue || secondTLValue) == current->data)
+		if ((lastValue == current->data) || (secondTLValue == current->data))
 		{
 			temp = current->data;
 			cout << "This is in the loop and the value comparing is:" << temp << endl;
