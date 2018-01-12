@@ -32,8 +32,8 @@ int main()
     THIS FUNCTION SHOULD RETURN TRUE IF ONE OF THE LAST TWO NODE'S APPEARS
     MORE THAN ONCE AND FALSE OTHERWISE.*/
 
-    bool statement = find_last_two(head);
-
+    statement = find_last_two(head);
+    cout << statement << endl;
 
     display_all(head);
     destroy(head);    
