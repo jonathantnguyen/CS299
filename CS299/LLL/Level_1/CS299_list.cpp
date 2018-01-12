@@ -113,7 +113,7 @@ bool find_last_two(node * head)
 	while(current != NULL && ((current != lastNode) || (current !=secondTLNode)))
 	{
 		
-		if ((lastValue || secondTLValue) == current)
+		if ((lastValue || secondTLValue) == current->data)
 			bool = true;
 		else
 		{
