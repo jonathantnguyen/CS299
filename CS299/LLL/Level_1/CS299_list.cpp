@@ -110,9 +110,10 @@ bool find_last_two(node * head)
 
 	current = head;
 
-	while(current != NULL && (current != lastNode || current !=secondTLNode))
+	while(current != NULL && ((current != lastNode) || (current !=secondTLNode)))
 	{
-
+		
+		if ((secondTLNode || lastNode) == current)
 	}
 
 
