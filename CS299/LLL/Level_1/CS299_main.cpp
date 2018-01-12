@@ -20,12 +20,19 @@ int main()
     //int count = display_allButFirst(head);
     //cout <<"My count is: " <<count;
 
+    
+
     /*SUM ALL OF THE DATA THAT IS LARGER THAN THE LAST NODE'S DATA
     ADD A NEW NODE AT THE END WITH THIS SUM RETURN THE SUM CALCULATED*/
 
-    int sum = dataGTLastNode(head);
-    cout << "My sum is: " << sum;
+    //int sum = dataGTLastNode(head);
+    //cout << "My sum is: " << sum;
 
+    /*FIND OUT IF THE LAST TWO NUMBERS APPEAR MORE THAN ONCE
+    THIS FUNCTION SHOULD RETURN TRUE IF ONE OF THE LAST TWO NODE'S APPEARS
+    MORE THAN ONCE AND FALSE OTHERWISE.*/
+
+    bool statement = find_last_two(head);
 
 
     display_all(head);
