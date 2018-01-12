@@ -99,12 +99,17 @@ bool find_last_two(node * head)
 
 		while (current->next == NULL) //When the last node is found, but looking at it's NULL next
 		{
-			lastNode = current->data; //It will store the last node and break of the first while loops
+			lastNode = current; //It will store the last node and break of the first while loops
 			break;
 		}
 
 		current = current->next;	//If it was the last node, it will kick out, if it's not it will continue to find the last node.
 	}
+
+	//Storing last known pointers to dummy variables
+
+	secondTLValue = secondTLNode->data;
+	lastValue = lastNode->data;
 
 	//Going back to compare values
 
