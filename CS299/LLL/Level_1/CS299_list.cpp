@@ -119,10 +119,10 @@ bool find_last_two(node * head)
 	{
 		
 		if ((lastValue || secondTLValue) == current->data)
-			bool = true;
+			bool statement = true;
 		else
 		{
-			bool = false;
+			bool statement = false;
 		}
 	}
 
