@@ -108,17 +108,18 @@ bool find_last_two(node * head)
 	//Storing last known pointers to dummy variables
 
 	secondTLValue = secondTLNode->data;
-	cout << secondTLValue << endl;
 	lastValue = lastNode->data;
-	cout << lastValue << endl;
+	cout << "2nd TL: " << secondTLValue << endl;
+	cout << "Last: " << lastValue << endl;
 
 	//Going back to compare values
 
 	current = head;
-
+	int temp;
 	while(current != NULL && ((current != lastNode) || (current !=secondTLNode)))
 	{
-
+		temp = current->data;
+		cout << temp << endl << endl;
 		if ((lastValue == current->data) || (secondTLValue == current->data))
 			statement++;
 		else
