@@ -112,7 +112,7 @@ bool find_last_two(node * head)
 
 	//Going back to compare values
 
-	current = head;
+	current = head; 
 	int temp;
 	while((current != NULL) && (current != secondTLNode))
 	{
