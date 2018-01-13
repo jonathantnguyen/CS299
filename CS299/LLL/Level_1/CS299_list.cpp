@@ -95,15 +95,15 @@ bool find_last_two(node * head)
 
 	while(current != NULL)
 	{
-		secondTLNode = current; //Continues to store the pointer to the current data before traversing to the next node
-
-		while (current->next == NULL) //When the last node is found, but looking at it's NULL next
+		if (current->next == NULL) //When the last node is found, but looking at it's NULL next
 		{
 			lastNode = current; //It will store the last node and break of the first while loops
-			break;
 		}
-
-		current = current->next;	//If it was the last node, it will kick out, if it's not it will continue to find the last node.
+		else
+		{
+			secondTLNode= current;
+			current = current->next;	//If it wasn't the last node, it will continue to find the last node.
+		}
 	}
 
 	//Storing last known pointers to dummy variables
@@ -116,30 +116,15 @@ bool find_last_two(node * head)
 	//Going back to compare values
 
 	current = head;
-	int temp;
-	temp = current->data;
-	cout << "Head value: "<< temp << endl;
-	int i = 0;
-	int j = 0;
 
 	while(current != NULL && ((current != lastNode) || (current !=secondTLNode)))
 	{
-	
-		i++;
-		cout <<"loop: " <<i << endl;
-		
+
 		if ((lastValue == current->data) || (secondTLValue == current->data))
-		{
-			temp = current->data;
-			cout << "This is in the loop and the value comparing is:" << temp << endl;
-			statement = true;
-		}
+			statement++;
 		else
-		{
-			j++;
-			cout << "False:" << j << endl;
 			statement = false;
-		}
+
 		current = current->next;
 	}
 
