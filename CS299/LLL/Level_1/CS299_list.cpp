@@ -127,7 +127,7 @@ bool find_last_two(node * head)
 
 		current = current->next;
 	}
-	count << statement << endl;
+	cout << statement << endl;
 
 return statement;
 }
