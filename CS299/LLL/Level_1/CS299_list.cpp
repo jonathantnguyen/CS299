@@ -142,10 +142,11 @@ float append(node *&head, int to_add)
 
 	while(current != NULL)
 	{	
-		if (current->next == NULL)
+		if ((current->next == NULL) && (current != newNode))
 		{
 			newNode = new node;
 			newNode->data = to_add;
+			newNode->next = NULL;
 			cout << to_add << endl;
  		}
 		else
