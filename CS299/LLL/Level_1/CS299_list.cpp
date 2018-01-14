@@ -127,3 +127,29 @@ bool find_last_two(node * head)
 
 return statement;
 }
+
+float append(node *&head, int to_add)
+{
+	int sumTotal;
+
+	if(!head)
+	{
+		return 0;
+	}	
+
+	node * current = head;
+	node * newNode;
+
+	while(current != NULL)
+	{	
+		if (current->next == NULL)
+		{
+			newNode = new node;
+			newNode->data = to_add;
+			cout << to_add << endl;;
+ 		}
+		else
+			current = currnet->next;
+	}
+
+}
