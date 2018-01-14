@@ -113,7 +113,7 @@ bool find_last_two(node * head)
 	//Going back to compare values
 
 	current = head; 
-	int temp;
+
 	while((current != NULL) && (current != secondTLNode))
 	{
 		if ((lastValue == current->data) || (secondTLValue == current->data))
@@ -130,7 +130,7 @@ return statement;
 
 float append(node *&head, int to_add)
 {
-	int sumTotal;
+	//int sumTotal;
 
 	if(!head)
 	{
