@@ -146,10 +146,10 @@ float append(node *&head, int to_add)
 		{
 			newNode = new node;
 			newNode->data = to_add;
-			cout << to_add << endl;;
+			cout << to_add << endl;
  		}
 		else
-			current = currnet->next;
+			current = current->next;
 	}
 
 }
