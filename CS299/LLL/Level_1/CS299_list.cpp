@@ -151,5 +151,5 @@ float append(node *&head, int to_add)
 		else
 			current = current->next;
 	}
-
+return 0;
 }
