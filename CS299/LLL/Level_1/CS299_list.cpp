@@ -140,9 +140,9 @@ float append(node *&head, int to_add)
 	node * current = head;
 	node * newNode;
 
-	while(current != NULL)
+	while(current != NULL && (current != newNode))
 	{	
-		if ((current->next == NULL) && (current != newNode))
+		if (current->next == NULL)
 		{
 			newNode = new node;
 			newNode->data = to_add;
