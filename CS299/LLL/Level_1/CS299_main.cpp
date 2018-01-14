@@ -46,6 +46,7 @@ int main()
     /*
     ADD A NODE TO THE END OF LLL; RETURN THE AVERAGE OF ALL OF THE DATA, INCLUDING THE NEW DATA
     */
+    int to_add = 10;
 
     append(head, to_add);
 
