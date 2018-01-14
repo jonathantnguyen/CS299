@@ -26,6 +26,7 @@ void destroy(node * &head);
 int display_allButFirst(node * head);
 int dataGTLastNode(node * head);
 bool find_last_two(node * head);
+float append(node * & head, int to_add);
 
 
 
