@@ -130,7 +130,9 @@ return statement;
 
 float append(node *&head, int to_add)
 {
-	//int sumTotal;
+	int sumTotal = 0;
+	int j;
+	float avg;
 
 	if(!head)
 	{
@@ -140,7 +142,7 @@ float append(node *&head, int to_add)
 	node * current = head;
 	node * newNode;
 
-	while(current != NULL && (current != newNode))
+	while(current != NULL && (current != newNode)) //Making sure that it doesn't to continue to add new nodes infinitely.
 	{	
 		if (current->next == NULL)
 		{
@@ -148,10 +150,19 @@ float append(node *&head, int to_add)
 			current->next = newNode;
 			newNode->data = to_add;
 			newNode->next = NULL;
-			cout << to_add << endl;
+			
  		}
 		else
 			current = current->next;
 	}
-return 0;
+	// Going back to the start of the list to add up
+	current = head;
+	while(current != NULL){
+		j++;
+		sumTotal = current->data;
+		sumTotal+=;
+	}
+	avg = sumtotal/j;
+
+return avg;
 }
