@@ -162,7 +162,7 @@ float append(node *&head, int to_add)
 		sumTotal = current->data;
 		sumTotal+=;
 	}
-	avg = sumtotal/j;
+	avg = sumTotal/j;
 
 return avg;
 }
