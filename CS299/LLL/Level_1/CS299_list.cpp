@@ -161,8 +161,8 @@ float append(node *&head, int to_add)
 	{
 		j++;
 		sumTotal = current->data;
+        sumTotal += sumTotal;
         cout << sumTotal << endl;
-		sumTotal += sumTotal;
 		current = current->next;
 	}
 	cout << sumTotal << endl;
