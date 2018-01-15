@@ -132,6 +132,7 @@ float append(node *&head, int to_add)
 {
 	int sumTotal = 0;
 	int j = 0;
+	int tempHolder;
 	float avg;
 
 	if(!head)
@@ -161,7 +162,7 @@ float append(node *&head, int to_add)
 	{
 		j++;
 		sumTotal = current->data;
-        sumTotal += sumTotal;
+        sumTotal += tempHolder;
         cout << sumTotal << endl;
 		current = current->next;
 	}
