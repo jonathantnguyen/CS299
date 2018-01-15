@@ -145,6 +145,7 @@ float append(node *&head, int to_add)
 		if (current->next == NULL)
 		{
 			newNode = new node;
+			current->next = newNode;
 			newNode->data = to_add;
 			newNode->next = NULL;
 			cout << to_add << endl;
