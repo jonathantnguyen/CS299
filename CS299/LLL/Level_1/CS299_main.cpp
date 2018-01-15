@@ -48,7 +48,8 @@ int main()
     */
     int to_add = 10;
 
-    append(head, to_add);
+    int avg = append(head, to_add);
+    cout << avg << endl;
 
 
     display_all(head);
