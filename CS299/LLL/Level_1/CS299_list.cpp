@@ -130,8 +130,8 @@ return statement;
 
 float append(node *&head, int to_add)
 {
-	int sumTotal = 0;
-	int j = 0;
+	float sumTotal = 0;
+	float j = 0;
 	int tempHolder;
 	float avg;
 
@@ -143,7 +143,7 @@ float append(node *&head, int to_add)
 	node * current = head;
 	node * newNode;
 
-	while(current != NULL && (current != newNode)) //Making sure that it doesn't to continue to add new nodes infinitely.
+	while(current != NULL && (current != newNode)) //Making sure that it doesn't to continue to add new nodes infinitely.	
 	{	
 		if (current->next == NULL)
 		{
