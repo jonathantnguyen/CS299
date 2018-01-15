@@ -157,10 +157,11 @@ float append(node *&head, int to_add)
 	}
 	// Going back to the start of the list to add up
 	current = head;
-	while(current != NULL){
+	while(current != NULL)
+	{
 		j++;
 		sumTotal = current->data;
-		sumTotal+=;
+		sumTotal+= sumTotal;
 	}
 	avg = sumTotal/j;
 
