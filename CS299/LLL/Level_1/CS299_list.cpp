@@ -164,6 +164,8 @@ float append(node *&head, int to_add)
 		sumTotal+= sumTotal;
 		current = current->next;
 	}
+	cout << sumTotal << endl;
+	cout << j << endl;
 	avg = sumTotal/j;
 
 return avg;
