@@ -21,7 +21,7 @@ int traverse(node * current, int match)
 			return 1;
 		}
 		current = current->next;
-		traverse();
+		traverse(current, match);
 	}
 	return 0;
 }
