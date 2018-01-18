@@ -19,7 +19,6 @@ int traverse(node * current, int match)
 		current = current->next;
 		if (match == current->data)
 		{
-			cout << match << endl;
 			return 1;
 		}
 		
