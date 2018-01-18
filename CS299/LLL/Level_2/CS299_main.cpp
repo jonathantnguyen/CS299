@@ -18,6 +18,7 @@ int main()
     int match = 4;
 
     bool tOF = find(head, match);
+    cout << tOF << endl;
     if (tOF)
     	cout << "true" << endl;
     else
