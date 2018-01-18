@@ -11,7 +11,7 @@ bool find(node * head, int match)
 		return 1;
 }
 
-void traverse(node * current, node *head, int match)
+int traverse(node * current, node *head, int match)
 {
 	while (current != NULL)
 	{
