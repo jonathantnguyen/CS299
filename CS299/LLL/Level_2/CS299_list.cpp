@@ -9,7 +9,7 @@ bool find(node * head, int match)
 
 	node * current = head;
 	if(traverse(current, match));
-		return 1;
+		return 0;
 }
 
 int traverse(node * current, int match)
