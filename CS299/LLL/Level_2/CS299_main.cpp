@@ -12,6 +12,11 @@ int main()
     display_all(head);
 
     //PLEASE PUT YOUR CODE HERE to call the functions
+
+
+    /* PART */
+    int match = 4;
+    
     find(head, match);
 
 
@@ -19,10 +24,4 @@ int main()
     destroy(head);    
 
     return 0;
-}
-
-bool find(node * head, int match)
-{
-	if(!head)
-		return 0;
 }
