@@ -8,7 +8,7 @@ bool find(node * head, int match)
 		return false;
 
 	node * current = head;
-	return (ifMatch(current, match));
+	ifMatch(current, match);
 	
 }
 
