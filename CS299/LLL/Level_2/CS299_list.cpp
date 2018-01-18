@@ -1,6 +1,6 @@
 #include "CS299_list.h"
 
-int traverse (node * current, int match);
+int traverse(node * current, int match);
 
 bool find(node * head, int match)
 {
@@ -23,4 +23,5 @@ int traverse(node * current, int match)
 		current = current->next;
 		traverse();
 	}
+	return 0;
 }
