@@ -16,9 +16,12 @@ int main()
 
     /* PART */
     int match = 4;
-    
-    find(head, match);
 
+    bool tOF = find(head, match);
+    if (tOF)
+    	cout << "true" << endl;
+    else
+    	cout << "false" << endl;
 
     display_all(head);
     destroy(head);    
