@@ -7,19 +7,19 @@ bool find(node * head, int match)
 		return 0;
 
 	node * current = head;
-	if(traverse(head, match));
+	if(traverse(current, head, match));
 		return 1;
 }
 
-void traverse(node *head, int match)
+void traverse(node * current, node *head, int match)
 {
-	while ( *current != NULL)
+	while (current != NULL)
 	{
-		if (match == *current->data)
+		if (match == current->data)
 		{
 			return 1;
 		}
-		*current = *current->next;
+		current = current->next;
 		traverse();
 	}
 }
