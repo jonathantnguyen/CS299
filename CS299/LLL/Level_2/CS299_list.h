@@ -21,5 +21,6 @@ void destroy(node * &head);     //supplied
 /* *****************YOUR TURN! ******************************** */
 /* PLACE YOUR PROTOTYPE HERE */
 
+bool find(node * head, int match);
 
 
