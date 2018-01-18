@@ -15,13 +15,14 @@ bool find(node * head, int match)
 int traverse(node * current, int match)
 {
 	while (current != NULL)
-	{
+	{	
+		current = current->next;
 		if (match == current->data)
 		{
 			cout << match << endl;
 			return 1;
 		}
-		current = current->next;
+		
 		traverse(current, match);
 	}
 	return 0;
