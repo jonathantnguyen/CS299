@@ -16,12 +16,11 @@ int traverse(node * current, int match)
 {
 	while (current != NULL)
 	{	
-		current = current->next;
 		if (match == current->data)
 		{
 			return 1;
 		}
-		
+		current = current->next;
 		traverse(current, match);
 	}
 	return 0;
