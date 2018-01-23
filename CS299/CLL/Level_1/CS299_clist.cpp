@@ -19,4 +19,5 @@ int display_except(node * &rear)
 		current = current->next;
 	}
 
+	return total;
 }
