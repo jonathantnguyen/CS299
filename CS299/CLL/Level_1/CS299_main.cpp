@@ -11,9 +11,12 @@ int main()
     build(rear);
     display_all(rear);
 
-    //PLEASE PUT YOUR CODE HERE to call the functions
-    int total = display_except(rear);
-    cout <<total << endl;
+  
+    //int total = display_except(rear);
+    //cout <<total << endl;
+
+
+    remove_last(rear);
 
 
     display_all(rear); //resulting list after your function call!
