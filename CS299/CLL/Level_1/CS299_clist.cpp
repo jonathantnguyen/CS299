@@ -2,7 +2,7 @@
 
 int display_except(node * &rear)
 {
-	int node * current = rear;
+	node * current = rear;
 	
 	if(!rear)
 		return 0;
