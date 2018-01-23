@@ -16,7 +16,8 @@ int main()
     //cout <<total << endl;
 
 
-    remove_last(rear);
+    if(remove_last(rear))
+    	cout << "true"<< endl;
 
 
     display_all(rear); //resulting list after your function call!
