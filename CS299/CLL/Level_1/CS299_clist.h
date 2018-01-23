@@ -20,5 +20,4 @@ void destroy(node * & rear); //supplied
 
 int display_except(node * & rear);
 bool remove_last(node * & rear);
-
-
+int copy_all(node * & new_rear, node * source_rear);

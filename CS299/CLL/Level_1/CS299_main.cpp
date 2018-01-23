@@ -16,12 +16,14 @@ int main()
     //cout <<total << endl;
 
 
-    if(remove_last(rear))
-    	cout << "true"<< endl;
+    //if(remove_last(rear))
+    //	cout << "true"<< endl;
 
+    copy_all(rear, source_rear);
 
+    
     display_all(rear); //resulting list after your function call!
     destroy(rear);
-    
+   
     return 0;
 }

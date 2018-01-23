@@ -42,8 +42,29 @@ bool remove_last(node * &rear)
 			return 1;
 		}
 		temp = current;
-
-		
 	}
 	return 0;
+}
+
+int copy_all(node * & new_rear, node * source_rear)
+{
+	node * current = source_rear->next;
+	node * temp = current;
+	if(!source_rear)
+		return 0;
+	if(source_rear == source_rear->next)
+		return 1;
+	new_rear = source_rear;
+
+	node * newCurrent = new_rear->next;
+	node * newTemp = newCurrent;
+
+	while(current != source_rear)
+	{
+		current = current->next;
+		newCurrent = current;
+		new_rear->next = newCurrent
+		newCurrent->next 
+	}
+
 }
