@@ -21,3 +21,24 @@ int display_except(node * &rear)
 
 	return total;
 }
+
+
+bool remove_last(node * &rear)
+{
+	node * current = rear->next;
+	node * temp = rear->next;
+
+	if(!rear)
+		return 0;
+	if(rear == rear->next)
+		return 0;
+	while(current != rear)
+	{
+		current = current->next;
+		if(current == rear)
+		{
+			temp = rear-next;
+			return 1;
+		}
+	}
+}

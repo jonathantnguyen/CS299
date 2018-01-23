@@ -19,5 +19,6 @@ void destroy(node * & rear); //supplied
 //Write your function prototype here:
 
 int display_except(node * & rear);
+bool remove_last(node * & rear);
 
 
