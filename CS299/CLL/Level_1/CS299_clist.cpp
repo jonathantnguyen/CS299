@@ -15,5 +15,5 @@ int display_except(node * &rear)
 		current = current->next;
 	}
 
-return value;
+	return value;
 }
