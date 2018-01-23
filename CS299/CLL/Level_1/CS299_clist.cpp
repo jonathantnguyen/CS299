@@ -40,6 +40,7 @@ bool remove_last(node * &rear)
 			temp = rear->next;
 			return 1;
 		}
+		temp = current;
 	}
 	return 0;
 }
