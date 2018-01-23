@@ -37,7 +37,7 @@ bool remove_last(node * &rear)
 		current = current->next;
 		if(current == rear)
 		{
-			temp = rear-next;
+			temp = rear->next;
 			return 1;
 		}
 	}
