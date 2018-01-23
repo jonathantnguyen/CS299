@@ -3,8 +3,8 @@
 int display_except(node * &rear)
 {
 	node * current = rear->next;
-	int value;
-	int total;
+	int value = 0;
+	int total = 0;
 
 	if(!rear)
 		return 0;
