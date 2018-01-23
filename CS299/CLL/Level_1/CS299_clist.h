@@ -18,6 +18,6 @@ void destroy(node * & rear); //supplied
 /* *****************YOUR TURN! ******************************** */
 //Write your function prototype here:
 
-int display_except(node * & rear);
+int display_except(node * rear);
 
 
