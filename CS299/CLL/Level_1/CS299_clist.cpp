@@ -41,4 +41,5 @@ bool remove_last(node * &rear)
 			return 1;
 		}
 	}
+	return 0;
 }
