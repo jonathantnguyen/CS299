@@ -26,7 +26,7 @@ int display_except(node * &rear)
 bool remove_last(node * &rear)
 {
 	node * current = rear->next;
-	node * temp = rear->next;
+	node * temp = current;
 
 	if(!rear)
 		return 0;
@@ -35,12 +35,12 @@ bool remove_last(node * &rear)
 	while(current != rear)
 	{
 		current = current->next;
-		if(current == rear)
+		if(current->next == rear->next)
 		{
-			temp = rear->next;
-			return 1;
+			temp->next = rear->next
 		}
 		temp = current;
+		
 	}
 	return 0;
 }
