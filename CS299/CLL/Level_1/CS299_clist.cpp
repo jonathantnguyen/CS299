@@ -4,6 +4,8 @@ int display_except(node * &rear)
 {
 	node * current = rear;
 	int value;
+	int total;
+
 	if(!rear)
 		return 0;
 	if(rear == rear->next)
@@ -11,9 +13,10 @@ int display_except(node * &rear)
 
 	while(current != rear)
 	{
-		cout << current->data << endl;
+		value = current->data;
+		total += value;
+		cout << value << endl;
 		current = current->next;
 	}
 
-	return value;
 }

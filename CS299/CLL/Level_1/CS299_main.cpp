@@ -12,8 +12,8 @@ int main()
     display_all(rear);
 
     //PLEASE PUT YOUR CODE HERE to call the functions
-    display_except(rear);
-
+    int total = display_except(rear);
+    cout <<total << endl;
 
 
     display_all(rear); //resulting list after your function call!
