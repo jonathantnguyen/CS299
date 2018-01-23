@@ -14,7 +14,7 @@ int display_except(node * &rear)
 	while(current != rear)
 	{
 		value = current->data;
-		total += value;
+		//total += value;
 		cout << value << endl;
 		current = current->next;
 	}
