@@ -1,5 +1,5 @@
 #include "CS299_clist.h"
-//Your name:
+//Your name: Jonathan Nguyen
 //
 //
 
@@ -12,7 +12,7 @@ int main()
     display_all(rear);
 
     //PLEASE PUT YOUR CODE HERE to call the functions
-
+    display_except(rear);
 
 
 
