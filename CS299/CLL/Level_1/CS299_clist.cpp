@@ -3,7 +3,7 @@
 int display_except(node * &rear)
 {
 	node * current = rear;
-	
+	int value;
 	if(!rear)
 		return 0;
 	if(rear == rear->next)
@@ -15,4 +15,5 @@ int display_except(node * &rear)
 		current = current->next;
 	}
 
+return value;
 }
