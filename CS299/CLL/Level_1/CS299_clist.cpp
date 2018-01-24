@@ -1,4 +1,4 @@
-#include "CS299_clist.h"
+ #include "CS299_clist.h"
 
 int display_except(node * &rear)
 {
@@ -48,7 +48,7 @@ bool remove_last(node * &rear)
 
 int copy_all(node * & new_rear, node * source_rear)
 {
-	node * current = source_rear->next;
+	node * current = source_rear;
 	node * temp = current;
 	if(!source_rear)
 		return 0;
@@ -68,3 +68,19 @@ int copy_all(node * & new_rear, node * source_rear)
 	}
 
 }
+
+/* 
+node * current = SR
+node * temp = NR
+node * newNode
+
+temp->data=SR->data
+
+current = current->next;
+newNode = new node();
+temp = newNode;
+newNode->data = temp->data;
+new_rear->next = temp
+
+if(current->next != source_rear)
+*/
