@@ -49,38 +49,39 @@ bool remove_last(node * &rear)
 int copy_all(node * & new_rear, node * source_rear)
 {
 	node * current = source_rear;
-	node * temp = current;
+	node * temp = new_rear;
+	node * newNode;
 	if(!source_rear)
 		return 0;
 	if(source_rear == source_rear->next)
-		return 1;
+		return 0;
+
 	new_rear = source_rear;
-
-	node * newCurrent = new_rear->next;
-	node * newTemp = newCurrent;
-
-	while(current != source_rear)
+	temp->data = source_rear->data;
+	current = current->next;
+	int count;
+	count++:
+	while (current != source_rear)
 	{
+		newNode = new node();
+		temp = newNode;
+		newNode->data = temp->data;
+		new_rear->next = temp;
 		current = current->next;
-		newCurrent = current;
-		new_rear->next = newCurrent
-		newCurrent->next 
+	}
+	temp = new_rear;
+
+	if(!new_rear)
+		return 0;
+	if(new_rear == new_rear->next);
+		return 0;
+
+
+	while(temp != new_rear)
+	{
+		temp = temp->next;
+		count++;
 	}
 
+	return count;
 }
-
-/* 
-node * current = SR
-node * temp = NR
-node * newNode
-
-temp->data=SR->data
-
-current = current->next;
-newNode = new node();
-temp = newNode;
-newNode->data = temp->data;
-new_rear->next = temp
-
-if(current->next != source_rear)
-*/
