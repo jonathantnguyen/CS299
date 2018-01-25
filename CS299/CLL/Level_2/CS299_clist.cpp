@@ -16,6 +16,7 @@ int traverse(node * current, node * rear)
 	if(current == rear)
 		return 1;
 
+	current = current->next;
 	int count = foo(current->next, rear);
 
 	rear->next = temp;
