@@ -19,7 +19,7 @@ int main()
     //if(remove_last(rear))
     //	cout << "true"<< endl;
 
-    copy_all(rear, source_rear);
+    copy_all(new_rear, source_rear);
 
     
     display_all(rear); //resulting list after your function call!
