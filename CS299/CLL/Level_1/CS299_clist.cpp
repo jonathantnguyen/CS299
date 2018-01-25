@@ -59,8 +59,8 @@ int copy_all(node * & new_rear, node * source_rear)
 	new_rear = source_rear;
 	temp->data = source_rear->data;
 	current = current->next;
-	int count;
-	count++:
+	int count = 0;
+	count++;
 	while (current->next != source_rear)
 	{
 		newNode = new node();
