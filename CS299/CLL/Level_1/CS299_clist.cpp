@@ -61,7 +61,7 @@ int copy_all(node * & new_rear, node * source_rear)
 	current = current->next;
 	int count;
 	count++:
-	while (current != source_rear)
+	while (current->next != source_rear)
 	{
 		newNode = new node();
 		temp = newNode;
@@ -76,10 +76,13 @@ int copy_all(node * & new_rear, node * source_rear)
 	if(new_rear == new_rear->next);
 		return 0;
 
+	int val = 0;
 
-	while(temp != new_rear)
+	while(temp->next != new_rear)
 	{
+		val = temp->data;
 		temp = temp->next;
+		cout << val << endl;
 		count++;
 	}
 
