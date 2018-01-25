@@ -18,4 +18,4 @@ void destroy(node * & rear); //supplied
 /* *****************YOUR TURN! ******************************** */
 //Write your function prototype here:
 
-
+int removal_entire(node * & rear);

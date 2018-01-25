@@ -1,4 +1,13 @@
-int foo(node *rear)
+#include "CS299_clist.h"
+
+
+int removal_entire(node * & rear)
+{
+ 	
+}
+
+
+/*int foo(node *rear)
 {
 	if(!rear)
 		return 0;
@@ -15,3 +24,5 @@ int foo(node * current, node * rear)
 	int result = foo(current->next,rear);
 	return result;
 }
+
+*/

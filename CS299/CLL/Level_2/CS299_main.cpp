@@ -12,6 +12,7 @@ int main()
     display_all(rear);
 
     //PLEASE PUT YOUR CODE HERE to call the functions
+    removal_entire(rear);
 
 
 
