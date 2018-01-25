@@ -8,6 +8,8 @@ using namespace std;
 int main()
 {
     node * rear = NULL;
+    node * new_rear = NULL;
+    node * source_rear = NULL;
     build(rear);
     display_all(rear);
 
@@ -19,8 +21,8 @@ int main()
     //if(remove_last(rear))
     //	cout << "true"<< endl;
 
-    copy_all(new_rear, source_rear);
-
+    int count = copy_all(new_rear, source_rear);
+    cout << count << endl;
     
     display_all(rear); //resulting list after your function call!
     destroy(rear);
