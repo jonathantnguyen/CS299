@@ -10,4 +10,5 @@ int main()
 		b = a % b;
 		printf("%i\n", b);
 	}
+exit;
 }
