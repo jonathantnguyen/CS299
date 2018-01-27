@@ -6,7 +6,7 @@ int main()
 {
 	int a;
 	int b;
-	scanf("%i", a);
+	scanf("%i\n", a);
 	while(b % 2 == 0)
 	{
 		b = a % 2;
