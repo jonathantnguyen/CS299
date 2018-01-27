@@ -5,10 +5,12 @@
 int main()
 {
 	int a;
+	int b;
 	scanf("%i", a);
-	while(b == 0)
+	while(b % 2 == 0)
 	{
-		b = a % b;
+		b = a % 2;
+		a = b
 		printf("%i\n", b);
 	}
 exit;
