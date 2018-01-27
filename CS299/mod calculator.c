@@ -6,11 +6,11 @@ int main()
 {
 	int a;
 
-	scanf("%d\n", a);
+	scanf("%d\n", &a);
 	while(a % 2 != 0)
 	{
 		a = a % 2;
-		printf("%d\n", a);
+		printf("%d\n", &a);
 	}
 exit;
 }
