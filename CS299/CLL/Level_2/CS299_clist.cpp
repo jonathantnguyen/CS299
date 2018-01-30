@@ -6,7 +6,7 @@ int removal_entire(node * & rear)
 	if(!rear)
 		return 0;
 
-	return traverse(rear->next, rear);	
+	return remove(rear->next, rear);	
 }
 
 int remove(node * current, node * rear)
@@ -15,7 +15,7 @@ int remove(node * current, node * rear)
 	if(current == rear)
 		return 1; 
 	//node * temp = current->next;
-	int count = traverse(current->next, rear);
+	int count = remove(current->next, rear);
 	delete(current);
 	//temp->next = NULL;
 
