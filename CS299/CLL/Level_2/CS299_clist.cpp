@@ -11,14 +11,12 @@ int removal_entire(node * & rear)
 
 int traverse(node * current, node * rear)
 {
-	node * current = rear;
 	//node * temp = current;
-	int count = 0;
 
 	if(current == rear)
 		return 0;
 	
-	count = traverse(current->next, rear);
+	int count = traverse(current->next, rear);
 	return count+1;
 }
 
