@@ -16,6 +16,7 @@ int remove(node * current, node * rear)
 		return 1; 
 	//node * temp = current->next;
 	int count = traverse(current->next, rear);
+	delete(current);
 	//temp->next = NULL;
 
 	return count+1;
