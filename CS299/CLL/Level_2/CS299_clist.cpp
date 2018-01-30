@@ -13,6 +13,7 @@ int traverse(node * current, node * rear)
 {
 	node * current = rear;
 	node * temp = current;
+	int count = 0;
 
 	if(current == rear)
 		return 0;
