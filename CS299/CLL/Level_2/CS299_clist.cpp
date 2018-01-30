@@ -13,17 +13,12 @@ int traverse(node * current, node * rear)
 {
 	node * current = rear;
 	node * temp = current;
+
 	if(current == rear)
 		return 0;
 
+	return count+1, traverse(current->next, rear);
 
-
-	int count = foo(current->next, rear);
-	delete current;
-	rear = NULL;
-
-
-	return count+1;
 }
 
 
@@ -47,5 +42,9 @@ int foo(node * current, node * rear)
 	int result = foo(current->next,rear);
 	return result;
 }
+
+*/
+
+/*
 
 */
