@@ -1,6 +1,6 @@
 #include "CS299_clist.h"
 
-int traverse(node * current, node * rear);
+int remove(node * current, node * rear);
 int removal_entire(node * & rear)
 {
 	if(!rear)
@@ -9,7 +9,7 @@ int removal_entire(node * & rear)
 	return traverse(rear->next, rear);	
 }
 
-int traverse(node * current, node * rear)
+int remove(node * current, node * rear)
 {
 	
 	if(current == rear)
