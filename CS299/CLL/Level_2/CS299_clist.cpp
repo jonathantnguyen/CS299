@@ -14,10 +14,12 @@ int traverse(node * current, node * rear)
 	//node * temp = current;
 
 	if(current == rear)
-		return 0;
+		delete current;
+		return 1;
 	
 	int count = traverse(current->next, rear);
 	delete current;
+
 	return count+1;
 }
 
