@@ -17,6 +17,7 @@ int traverse(node * current, node * rear)
 		return 0;
 	
 	int count = traverse(current->next, rear);
+	delete current;
 	return count+1;
 }
 
