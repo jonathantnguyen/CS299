@@ -12,8 +12,8 @@ int main()
     display_all(rear);
 
     //PLEASE PUT YOUR CODE HERE to call the functions
-    removal_entire(rear);
-
+   int i = removal_entire(rear);
+   cout << i << endl;
 
 
 

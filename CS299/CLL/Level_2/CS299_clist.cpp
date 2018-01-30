@@ -14,7 +14,9 @@ int traverse(node * current, node * rear)
 	node * current = rear;
 	node * temp = current;
 	if(current == rear)
-		return 1;
+		return 0;
+
+
 
 	int count = foo(current->next, rear);
 	delete current;
