@@ -14,10 +14,11 @@ int remove(node * current, node * rear)
 	
 	if(current == rear)
 		return 1; 
-	//node * temp = current->next;
+	
 	int count = remove(current->next, rear);
+	current->next = NULL;
 	delete(current);
-	//temp->next = NULL;
+	
 
 	return count+1;
 }
