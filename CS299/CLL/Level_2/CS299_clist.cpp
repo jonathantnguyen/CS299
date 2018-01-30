@@ -11,10 +11,9 @@ int removal_entire(node * & rear)
 
 int traverse(node * current, node * rear)
 {
-	//node * temp = current;
-
+	
 	if(current == rear)
-		return 0;
+		return 1;
 	
 	else
 		int count = traverse(current->next, rear);
