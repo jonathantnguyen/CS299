@@ -4,8 +4,10 @@ void find_tail(node * & current, node * & tail, node * & head);
 
 int remove_larger(node * & head)
 {
+	cout << "before !head" << endl;
 	if(!head)
 		return 0;
+	cout << "after !head" << endl;
 
 	node * current = head;
 	node * tail;
