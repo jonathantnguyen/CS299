@@ -4,16 +4,14 @@ void find_tail(node * & current, node * & tail, node * & head);
 
 int remove_larger(node * & head)
 {
-	cout << "before !head" << endl;
 	if(!head)
 		return 0;
-	cout << "after !head" << endl;
 
 	node * current = head;
 	node * tail;
 
 	int first_val = head->data;
-	cout << "Head node value:" <<first_val << endl; 
+	cout << "Head node value: " << first_val << endl; 
 
 	find_tail(current, tail, head);
 
