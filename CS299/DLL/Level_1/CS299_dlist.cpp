@@ -1,6 +1,6 @@
 #include "CS299_dlist.h"
 
-void find_tail(node * current, node * tail, node * & head);
+void find_tail(node * & current, node * & tail, node * & head);
 
 int remove_larger(node * & head)
 {
@@ -15,13 +15,11 @@ int remove_larger(node * & head)
 
 	find_tail(current, tail, head);
 
-	current = head;
-
-
-
+	//current = head;
+	return 0;
 }
 
-void find_tail(node * current, node * tail, node * & head)
+void find_tail(node * & current, node * & tail, node * & head)
 {
 	while (current->next != NULL)
 	{
