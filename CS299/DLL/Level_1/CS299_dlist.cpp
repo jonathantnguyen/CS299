@@ -15,6 +15,8 @@ int remove_larger(node * & head)
 
 	find_tail(current, tail, head);
 
+	int tail_val = tail->data;
+
 	//current = head;
 	return 0;
 }
