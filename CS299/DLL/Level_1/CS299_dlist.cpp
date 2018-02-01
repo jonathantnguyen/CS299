@@ -31,6 +31,7 @@ void find_tail(node * & current, node * & tail, node * & head)
 }
 int compare_delete(node * & current, node * & tail, node * & head)
 {
+	int i;
 	int head_val = head->data;
 	int current_val = current->data;
 
@@ -44,6 +45,7 @@ int compare_delete(node * & current, node * & tail, node * & head)
 		current_val = current->data;
 		if(head_val > current_val)
 		{
+			i++;
 			current = current->previous;
 			tail = current;
 			current->next = NULL;
@@ -52,6 +54,7 @@ int compare_delete(node * & current, node * & tail, node * & head)
 		}
 
 	}
+	return i;
 
 
 
