@@ -43,8 +43,8 @@ void compare_delete(node * & current, node * & tail, node * & head)
 		current = temp;
 		temp = current->next;
 		current_val = current->data;
-		cout << "Current Value" << current_val << endl;
-		if (head->data > current->data)
+		cout << "Current Value: " << current_val << endl;
+		if (head_val > current_val)
 		{
 			head->next = temp;
 			temp->previous = head;
