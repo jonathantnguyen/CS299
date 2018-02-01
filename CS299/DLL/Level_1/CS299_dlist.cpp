@@ -43,7 +43,9 @@ void compare_delete(node * & current, node * & tail, node * & head)
 		{
 			head->next = temp;
 			temp->previous = head;
+			delete(current);
 		}
-		current = current->next;
+		current = temp->next;
+
 	}
 }
