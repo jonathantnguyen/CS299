@@ -1,6 +1,7 @@
 #include "CS299_dlist.h"
 
 void find_tail(node * & current, node * & tail, node * & head);
+void compare_delete(node * & current, node * & tail, node * & head);
 
 int remove_larger(node * & head)
 {
@@ -10,13 +11,9 @@ int remove_larger(node * & head)
 	node * current = head;
 	node * tail;
 
-	int first_val = head->data;
-	cout << "Head node value: " << first_val << endl; 
-
 	find_tail(current, tail, head);
+	compare_delete(current,tail, head);
 
-	int tail_val = tail->data;
-	cout << "Tail node value:" << tail_val << endl;
 
 	//current = head;
 	return 0;
@@ -32,4 +29,22 @@ void find_tail(node * & current, node * & tail, node * & head)
 			tail = current;
 	}
 
+}
+void compare_delete(node * & current, node * & tail, node * & head)
+{
+	current = head;
+	int head_val = head->data;
+	node * temp = head;
+ 
+	current = current->next;
+	while(current != tail)
+	{
+		temp = current->next;
+		if (head->data > current->data)
+		{
+			head->next = temp;
+			temp->previous = head;
+		}
+		current = current->next;
+	}
 }
