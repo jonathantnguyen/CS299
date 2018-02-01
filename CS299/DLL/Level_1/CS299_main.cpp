@@ -12,8 +12,8 @@ int main()
 
     //PLEASE PUT YOUR CODE HERE to call the functions
 
-	remove_larger(head);
-
+	int i =remove_larger(head);
+	cout << "Number of items deleted: " << i << endl
     display_all(head);
     destroy(head);    
     return 0;
