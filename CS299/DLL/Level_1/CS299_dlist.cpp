@@ -12,11 +12,10 @@ int remove_larger(node * & head)
 	node * tail;
 
 	find_tail(current, tail, head);
-	compare_delete(current, tail, head);
+	return compare_delete(current, tail, head);
 
 
 	//current = head;
-	return 0;
 }
 
 void find_tail(node * & current, node * & tail, node * & head)
@@ -32,15 +31,34 @@ void find_tail(node * & current, node * & tail, node * & head)
 }
 void compare_delete(node * & current, node * & tail, node * & head)
 {
-	current = head;
-	node * temp = head;
- 	int head_val = head->data;
- 	int current_val;
+	int head_val = head->data;
+	int current_val = current->data;
 
-	current = current->next;
+	node * temp = current;
+	
+	if(current != tail)
+		return 0;
+
+	while(current != head)
+	{
+
+		if(head_val > current_val)
+		{
+			current = current->previous;
+			tail = current;
+			current->next = NULL
+			delete(temp);
+		}
+
+	}
+
+
+
+
+	/*current = current->next;
 
 	cout << "Head Value: " << head_val << endl;
-	while(current != tail)
+	while(current->next != NULL)
 	{
 		temp = current->next->next;
 		current_val = current->data;
@@ -54,6 +72,6 @@ void compare_delete(node * & current, node * & tail, node * & head)
 
 		current = current->next;
 
-
+*/
 	}
 }
