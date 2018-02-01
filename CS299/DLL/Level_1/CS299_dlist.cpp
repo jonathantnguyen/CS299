@@ -36,12 +36,14 @@ void compare_delete(node * & current, node * & tail, node * & head)
 	node * temp = head;
  	int head_val = head->data;
  	int current_val;
+
 	current = current->next;
+
 	cout << "Head Value: " << head_val << endl;
 	while(current != tail)
 	{
-		current = temp;
-		temp = current->next;
+		current = current->next;
+		temp = current->next->next;
 		current_val = current->data;
 		cout << "Current Value: " << current_val << endl;
 		if (head_val > current_val)
