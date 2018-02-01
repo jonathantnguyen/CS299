@@ -11,7 +11,7 @@ int remove_larger(node * & head)
 	node * tail;
 
 	int first_val = head->data;
-	printf("%d \n",first_val); 
+	cout << first_val << endl; 
 
 	find_tail(current, tail, head);
 
