@@ -77,5 +77,4 @@ int compare_delete(node * & current, node * & tail, node * & head)
 		current = current->next;
 
 */
-	}
 }
