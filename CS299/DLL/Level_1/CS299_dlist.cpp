@@ -12,7 +12,7 @@ int remove_larger(node * & head)
 	node * tail;
 
 	find_tail(current, tail, head);
-	compare_delete(current,tail, head);
+	compare_delete(current, tail, head);
 
 
 	//current = head;
@@ -33,7 +33,6 @@ void find_tail(node * & current, node * & tail, node * & head)
 void compare_delete(node * & current, node * & tail, node * & head)
 {
 	current = head;
-	int head_val = head->data;
 	node * temp = head;
  
 	current = current->next;
