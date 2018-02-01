@@ -19,3 +19,5 @@ void destroy(node * &head); //supplied
 
 /* *****************YOUR TURN! ******************************** */
 /* place your prototype here */
+
+int remove_larger(node * & head);
