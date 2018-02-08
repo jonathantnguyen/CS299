@@ -1,7 +1,7 @@
 #include "CS299_dlist.h"
 
 void find_tail(node * & current, node * & tail, node * & head);
-int compare_delete(node * & current, node * & tail, node * & head);
+int compare_delete(int i, node * & current, node * & tail, node * & target);
 
 int remove_larger(node * & head)
 {
@@ -10,12 +10,14 @@ int remove_larger(node * & head)
 
 	node * current = head;
 	node * tail;
+	node * target = head;
+	int i = 0;
 
 	find_tail(current, tail, head);
-	return compare_delete(current, tail, head);
+	current = head;
 
+	return compare_delete(i, current, tail, target);
 
-	//current = head;
 }
 
 void find_tail(node * & current, node * & tail, node * & head)
@@ -29,32 +31,29 @@ void find_tail(node * & current, node * & tail, node * & head)
 	}
 
 }
-int compare_delete(node * & current, node * & tail, node * & head)
+int compare_delete(int i, node * & current, node * & tail, node * & target)
 {
-	int i;
-	int head_val = head->data;
-	int current_val = current->data;
+		int i;
+		if (current == NULL)
+			return 0;
 
-	node * temp = current;
-	
-	if(current != tail)
-		return 0;
-
-	while(current != head)
-	{
-		current_val = current->data;
-		if(head_val > current_val)
-		{
+		if((target->data < current->data) && target)
+		{	temp = current->previous;
+			return compare_delete(current->next, tail, target);
+			delete current;
+			current = temp;
+			temp = temp->previous;
 			i++;
-			current = current->previous;
-			tail = current;
-			current->next = NULL;
-			delete(temp);
-			cout << "VALUE DELETED: " << current_val << endl;
 		}
+		else
+			temp = current->previous;
+			return compare_delete(current->next, tail, target);
+			current = temp;
+			temp = temp->previous;
 
-	}
-	return i;
+return i;
+
+}
 
 
 
@@ -77,4 +76,4 @@ int compare_delete(node * & current, node * & tail, node * & head)
 		current = current->next;
 
 */
-}
+
