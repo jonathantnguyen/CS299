@@ -36,7 +36,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 {
 		if (current == NULL)
 			return 0;
-
+		cout << target->data << "|||" << current->data << endl; 
 		if((target->data < current->data) && target != current)
 		{	temp = current->previous;
 			cout << current->data << "Is greater" << endl;
