@@ -40,8 +40,8 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 		if((target->data < current->data) && target != current)
 		{	temp = current->previous;
 			cout << current->data << "Is greater" << endl;
-			current = current->next;
-			return compare_delete(i, current, tail, target, temp, head);
+
+			return compare_delete(i, current->next, tail, target, temp, head);
 			delete current;
 			current = temp;
 			temp = temp->previous;
@@ -52,7 +52,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 			temp = current->previous;
 			current = current->next;
 			cout << current->data << "Less" << endl;
-			return compare_delete(i, current, tail, target, temp, head);
+			return compare_delete(i, current->next, tail, target, temp, head);
 			current = temp;
 			temp = temp->previous;
 		}
