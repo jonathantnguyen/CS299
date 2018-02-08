@@ -41,12 +41,12 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 		{	
 			temp = current->previous;
 			cout << current->data << " Is greater" << endl;
-			i++;
+			i = i++;
 			return compare_delete(i, current->next, tail, target, temp, head);
 			delete current;
 			current = temp;
 			temp = temp->previous;
-			cout << "i ::::"<< i << endl;
+			cout << "i ::::" << i << endl;
 		}
 		else
 		{
