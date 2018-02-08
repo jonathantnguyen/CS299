@@ -10,7 +10,7 @@ int remove_larger(node * & head)
 
 	node * current = head;
 	node * tail;
-	node * temp;
+	node * temp = current;
 	node * target = head;
 	int i = 0;
 
@@ -37,7 +37,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 		if (current == NULL)
 			return 0;
 
-		if((target->data < current->data) && target)
+		if((target->data < current->data) && target != head)
 		{	temp = current->previous;
 			return compare_delete(current->next, tail, target, temp);
 			delete current;
@@ -54,26 +54,3 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 return i;
 
 }
-
-
-
-
-	/*current = current->next;
-
-	cout << "Head Value: " << head_val << endl;
-	while(current->next != NULL)
-	{
-		temp = current->next->next;
-		current_val = current->data;
-		cout << "Current Value: " << current_val << endl;
-		if (head_val > current_val)
-		{
-			head->next = temp;
-			temp->previous = head;
-			delete(current);
-		}
-
-		current = current->next;
-
-*/
-
