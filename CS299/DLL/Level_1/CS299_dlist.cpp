@@ -39,7 +39,8 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 
 		if((target->data < current->data) && target != head)
 		{	temp = current->previous;
-			return compare_delete(current->next, tail, target, temp);
+			current = current->next;
+			return compare_delete(current, tail, target, temp, head);
 			delete current;
 			current = temp;
 			temp = temp->previous;
@@ -47,7 +48,8 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 		}
 		else
 			temp = current->previous;
-			return compare_delete(current->next, tail, target, temp);
+			current = current->next;
+			return compare_delete(current, tail, target, temp, head);
 			current = temp;
 			temp = temp->previous;
 
