@@ -1,7 +1,7 @@
 #include "CS299_dlist.h"
 
 void find_tail(node * & current, node * & tail, node * & head);
-int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp);
+int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head);
 
 int remove_larger(node * & head)
 {
@@ -17,7 +17,7 @@ int remove_larger(node * & head)
 	find_tail(current, tail, head);
 	current = head;
 
-	return compare_delete(i, current, tail, target, temp);
+	return compare_delete(i, current, tail, target, temp, head);
 
 }
 
@@ -32,7 +32,7 @@ void find_tail(node * & current, node * & tail, node * & head)
 	}
 
 }
-int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp)
+int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head)
 {
 		if (current == NULL)
 			return 0;
