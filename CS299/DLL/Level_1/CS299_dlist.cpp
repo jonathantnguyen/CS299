@@ -54,7 +54,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 			current = temp;
 			temp = temp->previous;
 		}
-
+		cout  << "i ::::"<< i << endl;
 return i;
 
 }
