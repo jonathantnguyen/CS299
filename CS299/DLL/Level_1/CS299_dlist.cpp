@@ -1,7 +1,7 @@
 #include "CS299_dlist.h"
 
 void find_tail(node * & current, node * & tail, node * & head);
-int compare_delete(int i, node * & current, node * & tail, node * & target);
+int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp);
 
 int remove_larger(node * & head)
 {
@@ -10,13 +10,14 @@ int remove_larger(node * & head)
 
 	node * current = head;
 	node * tail;
+	node * temp;
 	node * target = head;
 	int i = 0;
 
 	find_tail(current, tail, head);
 	current = head;
 
-	return compare_delete(i, current, tail, target);
+	return compare_delete(i, current, tail, target, temp);
 
 }
 
@@ -31,15 +32,14 @@ void find_tail(node * & current, node * & tail, node * & head)
 	}
 
 }
-int compare_delete(int i, node * & current, node * & tail, node * & target)
+int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp)
 {
-		int i;
 		if (current == NULL)
 			return 0;
 
 		if((target->data < current->data) && target)
 		{	temp = current->previous;
-			return compare_delete(current->next, tail, target);
+			return compare_delete(current->next, tail, target, temp);
 			delete current;
 			current = temp;
 			temp = temp->previous;
@@ -47,7 +47,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target)
 		}
 		else
 			temp = current->previous;
-			return compare_delete(current->next, tail, target);
+			return compare_delete(current->next, tail, target, temp);
 			current = temp;
 			temp = temp->previous;
 
