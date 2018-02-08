@@ -48,12 +48,14 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 			i++;
 		}
 		else
+		{
 			temp = current->previous;
 			current = current->next;
 			cout << current->data << "Less" << endl;
 			return compare_delete(i, current, tail, target, temp, head);
 			current = temp;
 			temp = temp->previous;
+		}
 
 return i;
 
