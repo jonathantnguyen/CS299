@@ -69,9 +69,35 @@ int compare_delete(int i, node * & current,node * & target, node * & temp, node 
 			current->previous->next = temp;
 			delete current;
 			i+=1;
-			cout << "Count: " << i << endl;
 		}
 		current = temp;
 	}
 return i;
+}
+
+int remove_every_other(node * & head)
+{
+	if(!head)
+		return 0;
+
+	node * current = head;
+	node * temp;
+	int i = 0;
+	int j = 0;
+	while(current->next != NULL)
+	{
+		temp = current->next;
+		if(i % 2 == 1)
+		{
+			temp->previous = current->previous
+			temp->previous->next = temp;
+			delete current;
+			i = i++;
+			j = i++;
+		}
+		else
+			i = i++;
+
+		current  = temp;
+	}
 }

@@ -21,3 +21,4 @@ void destroy(node * &head); //supplied
 /* place your prototype here */
 
 int remove_larger(node * & head);
+int remove_every_other(node * & head);
