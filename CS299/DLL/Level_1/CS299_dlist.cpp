@@ -129,6 +129,7 @@ int duplicate_2(node * & head)
 	while(current->next != NULL)
 	{
 		temp = current->next;
+		cout << temp->data << endl;
 		if(current->data == 2)
 		{
 			temp = new node;
