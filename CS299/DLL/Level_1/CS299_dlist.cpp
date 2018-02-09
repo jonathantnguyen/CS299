@@ -24,8 +24,8 @@ int remove_larger(node * & head)
 
 	find_tail(current, tail, head);
 	current = head;
-	return compare_delete(i, current, tail, target, temp, head);
-
+	i = compare_delete(i, current, tail, target, temp, head);
+	return i;
 }
 
 /**
