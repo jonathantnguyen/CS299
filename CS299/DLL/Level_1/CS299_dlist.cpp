@@ -17,7 +17,6 @@ int remove_larger(node * & head)
 		return 0;
 
 	node * current = head;
-	node * tail;
 	node * temp = current;
 	node * target = head;
 	int i = 0;
