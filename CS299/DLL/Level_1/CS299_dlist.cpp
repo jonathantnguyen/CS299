@@ -24,7 +24,11 @@ int remove_larger(node * & head)
 
 	find_tail(current, tail, head);
 	current = head;
+	cout << "Before COMPARE" << endl;
+
 	i = compare_delete(i, current, tail, target, temp, head);
+	cout << "After COMPARE" << endl;
+
 	return i;
 }
 
@@ -55,7 +59,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 		cout << "Inside WHILE loop" << endl;
 		if (target->data < current->data)
 		{
-			cout << "Inside IF loop" << endl;
+			cout << "Inside IF statement" << endl;
 			temp->previous = current->previous;
 			current->previous->next = temp;
 			delete current;
