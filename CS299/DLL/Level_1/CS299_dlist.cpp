@@ -54,7 +54,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 		temp = current->next;
 		if (target->data < current->data)
 		{
-			temp->previous = current->previous
+			temp->previous = current->previous;
 			current->previous->next = temp;
 			delete current;
 			i+=1;
