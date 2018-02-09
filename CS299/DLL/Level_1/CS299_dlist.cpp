@@ -128,16 +128,15 @@ int duplicate_2(node * & head)
 	int i;
 	while(current->next != NULL)
 	{
-		temp = current->next;
 		cout << temp->data << endl;
 		if(current->data == 2)
 		{
-			temp = new node;
-			temp->data = 2;
-			cout << temp->data << endl;
+			temp = new node(2);
+			//cout << temp->data << endl;
 			temp->previous = current;
 			temp->next = current->next;
 			current->next = temp;
+			temp->next->previous = temp;
 			current = temp;
 			i +=1;
 		}
