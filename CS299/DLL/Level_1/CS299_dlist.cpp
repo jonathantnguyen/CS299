@@ -133,6 +133,7 @@ int duplicate_2(node * & head)
 		{
 			temp = new node;
 			temp->data = 2;
+			cout << temp->data << endl;
 			temp->previous = current;
 			temp->next = current->next;
 			current->next = temp;
