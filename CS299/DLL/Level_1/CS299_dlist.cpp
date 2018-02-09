@@ -53,7 +53,7 @@ void find_tail(node * & current, node * & tail, node * & head)
 int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head)
 {
 	current = current->next;
-	while(current->next == NULL)
+	while(current->next != NULL)
 	{
 		temp = current->next;
 		cout << "Inside WHILE loop" << endl;
