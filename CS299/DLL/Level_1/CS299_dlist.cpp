@@ -1,6 +1,5 @@
 #include "CS299_dlist.h"
 
-void find_tail(node * & current, node * & tail, node * & head);
 int compare_delete(int i, node * & current, node * & target, node * & temp, node * & head);
 
 /**
@@ -33,17 +32,7 @@ int remove_larger(node * & head)
  * @param      tail     The tail
  * @param      head     The head
  */
-void find_tail(node * & current, node * & tail, node * & head)
-{
-	while (current->next != NULL)
-	{
-		current = current->next;
 
-		if(current->next == NULL)
-			tail = current;
-	}
-
-}
 
 /**
  * @brief      Going from head to tail, check if the value is larger than head,
