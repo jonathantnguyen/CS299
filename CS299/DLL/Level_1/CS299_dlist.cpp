@@ -3,6 +3,14 @@
 void find_tail(node * & current, node * & tail, node * & head);
 int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head);
 
+/**
+ * @brief      Defines the tail and calls compare_delete to remove any values
+ *             larger than the head.
+ *
+ * @param      head  The head
+ *
+ * @return     {returning the number of items deleted}
+ */
 int remove_larger(node * & head)
 {
 	if(!head)
@@ -16,11 +24,17 @@ int remove_larger(node * & head)
 
 	find_tail(current, tail, head);
 	current = head;
-
 	return compare_delete(i, current, tail, target, temp, head);
 
 }
 
+/**
+ * @brief      Find the end of the DLL and have tail point to it.
+ *
+ * @param      current  The current
+ * @param      tail     The tail
+ * @param      head     The head
+ */
 void find_tail(node * & current, node * & tail, node * & head)
 {
 	while (current->next != NULL)
@@ -34,28 +48,18 @@ void find_tail(node * & current, node * & tail, node * & head)
 }
 int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head)
 {
-		if (current == NULL)
-			return 0;
-		cout << target->data << " ||| " << current->data << endl; 
-		if((target->data < current->data) && target != current)
-		{	
-			temp = current->previous;
-			cout << current->data << " Is greater" << endl;
-			i = i + 1;
-			return compare_delete(i, current->next, tail, target, temp, head);
-			delete current;
-			current = temp;
-			temp = temp->previous;
-			cout << "i ::::" << i << endl;
-		}
-		else
+	current = current->next;
+	while(current->next == NULL)
+	{
+		temp = current->next;
+		if (target->data < current->data)
 		{
-			temp = current->previous;
-			cout << current->data << " Less" << endl;
-			return compare_delete(i, current->next, tail, target, temp, head);
-			current = temp;
-			temp = temp->previous;
+			temp->previous = current->previous
+			current->previous->next = temp;
+			delete current;
+			i+=1;
 		}
+		current = temp;
+	}
 return i;
-
 }
