@@ -92,11 +92,11 @@ int remove_every_other(node * & head)
 			temp->previous = current->previous;
 			temp->previous->next = temp;
 			delete current;
-			i = i++;
-			j = i++;
+			i += 1;
+			j += 1;
 		}
 		else
-			i = i++;
+			i += 1;
 
 		current  = temp;
 	}
