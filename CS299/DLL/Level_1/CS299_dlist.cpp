@@ -113,6 +113,7 @@ int remove_every_other(node * & head)
 			tail = current;
 			current->previous->next = NULL;
 			delete temp;
+			i+=1;
 		}
 	}
 return j;
@@ -140,6 +141,17 @@ int duplicate_2(node * & head)
 			i +=1;
 		}
 		current = current->next;
+
+		if ((current->next == NULL) && (current->data == 2)) //Special case for last node
+		{
+			node * temp = new node;
+			temp->data = 2;
+ 			temp->previous = current;
+			temp->next = current->next;
+			current->next = temp
+			tail = temp;
+			i += 1;
+		}
 	}
 
 	return i;
