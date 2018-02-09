@@ -89,7 +89,7 @@ int remove_every_other(node * & head)
 		temp = current->next;
 		if(i % 2 == 1)
 		{
-			temp->previous = current->previous
+			temp->previous = current->previous;
 			temp->previous->next = temp;
 			delete current;
 			i = i++;
@@ -100,4 +100,5 @@ int remove_every_other(node * & head)
 
 		current  = temp;
 	}
+return j;
 }
