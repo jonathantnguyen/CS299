@@ -123,7 +123,7 @@ int duplicate_2(node * & head)
 	if(!head)
 		return 0;
 
-	node * current;
+	node * current = head;
 	int i;
 	while(current->next != NULL)
 	{
