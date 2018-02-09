@@ -148,7 +148,7 @@ int duplicate_2(node * & head)
 			temp->data = 2;
  			temp->previous = current;
 			temp->next = current->next;
-			current->next = temp
+			current->next = temp;
 			tail = temp;
 			i += 1;
 		}
