@@ -123,15 +123,14 @@ int duplicate_2(node * & head)
 	if(!head)
 		return 0;
 
-	node * temp;
 	node * current;
 	int i;
 	while(current->next != NULL)
 	{
-		cout << temp->data << endl;
+		//cout << temp->data << endl;
 		if(current->data == 2)
 		{
-			* temp = new node;
+			node * temp = new node;
 			temp->data = 2;
  			temp->previous = current;
 			temp->next = current->next;
