@@ -3,6 +3,7 @@
 #include <cstring>
 #include <cctype>
 #include <cstdlib>
+#
 using namespace std;
 
 struct node
@@ -22,3 +23,4 @@ void destroy(node * &head); //supplied
 
 int remove_larger(node * & head);
 int remove_every_other(node * & head);
+int duplicate_2(node * & head);

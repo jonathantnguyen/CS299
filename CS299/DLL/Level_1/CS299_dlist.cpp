@@ -75,6 +75,13 @@ int compare_delete(int i, node * & current,node * & target, node * & temp, node 
 return i;
 }
 
+/**
+ * @brief      Removes every other node
+ *
+ * @param      head  is set
+ *
+ * @return     Returns the count;
+ */
 int remove_every_other(node * & head)
 {
 	if(!head)
@@ -101,7 +108,7 @@ int remove_every_other(node * & head)
 
 		current  = temp;
 
-		if ((current->next == NULL) &&  (i % 2 == 1))
+		if ((current->next == NULL) &&  (i % 2 == 1)) 	//Special case for tail node
 		{
 			tail = current;
 			current->previous->next = NULL;
@@ -109,4 +116,31 @@ int remove_every_other(node * & head)
 		}
 	}
 return j;
+}
+
+int duplicate_2(node * & head)
+{
+	if(!head)
+		return 0;
+
+	node * temp;
+	node * current;
+	int i;
+	while(current->next != NULL)
+	{
+		temp = current->next;
+		if(current->data == 2)
+		{
+			temp * = new node;
+			temp->data = 2;
+			temp->previous = current;
+			temp->next = current->next;
+			current->next = temp;
+			current = temp;
+			i +=1;
+		}
+		current = current->next;
+	}
+
+	return i;
 }

@@ -14,12 +14,11 @@ int main()
 
 	//int i = remove_larger(head);
 	
+    //int i = remove_every_other(head);
+	//cout << "Number of items deleted: " << i << endl;
 
-
-    int i = remove_every_other(head);
-
-	cout << "Number of items deleted: " << i << endl;
-
+    int i = duplicate(head);
+    cout << "Number of duplicates: " << i << endl;
 
     display_all(head);
     destroy(head);    
