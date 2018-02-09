@@ -131,7 +131,7 @@ int duplicate_2(node * & head)
 		cout << temp->data << endl;
 		if(current->data == 2)
 		{
-			temp = new node;
+			* temp = new node;
 			temp->data = 2;
  			temp->previous = current;
 			temp->next = current->next;
