@@ -60,7 +60,7 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 			current->previous->next = temp;
 			delete current;
 			i+=1;
-			cout << "Count: " << i << end;
+			cout << "Count: " << i << endl;
 		}
 		current = temp;
 	}
