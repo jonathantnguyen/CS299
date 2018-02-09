@@ -52,12 +52,15 @@ int compare_delete(int i, node * & current, node * & tail, node * & target, node
 	while(current->next == NULL)
 	{
 		temp = current->next;
+		cout << "Inside WHILE loop" << endl;
 		if (target->data < current->data)
 		{
+			cout << "Inside IF loop" << endl;
 			temp->previous = current->previous;
 			current->previous->next = temp;
 			delete current;
 			i+=1;
+			cout << "Count: " << i << end;
 		}
 		current = temp;
 	}
