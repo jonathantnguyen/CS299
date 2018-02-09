@@ -114,6 +114,7 @@ int duplicate_2(node * & head)
 		return 0;
 
 	node * current = head;
+	node * tail;
 	int i;
 	while(current->next != NULL)
 	{
