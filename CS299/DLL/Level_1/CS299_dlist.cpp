@@ -1,7 +1,7 @@
 #include "CS299_dlist.h"
 
 void find_tail(node * & current, node * & tail, node * & head);
-int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head);
+int compare_delete(int i, node * & current, node * & target, node * & temp, node * & head);
 
 /**
  * @brief      Defines the tail and calls compare_delete to remove any values
@@ -22,14 +22,9 @@ int remove_larger(node * & head)
 	node * target = head;
 	int i = 0;
 
-	find_tail(current, tail, head);
 	current = head;
-	//cout << "Before COMPARE" << endl;
+	return compare_delete(i, current, target, temp, head);
 
-	i = compare_delete(i, current, tail, target, temp, head);
-	//cout << "After COMPARE" << endl;
-
-	return i;
 }
 
 /**
@@ -50,16 +45,27 @@ void find_tail(node * & current, node * & tail, node * & head)
 	}
 
 }
-int compare_delete(int i, node * & current, node * & tail, node * & target, node * & temp, node * & head)
+
+/**
+ * @brief      Going from head to tail, check if the value is larger than head,
+ *             if so, delete, and rearrange the pointers.
+ *
+ * @param[in]  i        counts how many times we've deleted nodes
+ * @param      current  The current node, DYNAMIC
+ * @param      target   The target node, STATIC
+ * @param      temp     The temporary node DYNAMIC
+ * @param      head     The head node, STATIC
+ *
+ * @return     Returns i, the count
+ */
+int compare_delete(int i, node * & current,node * & target, node * & temp, node * & head)
 {
 	current = current->next;
 	while(current->next != NULL)
 	{
 		temp = current->next;
-		//cout << "Inside WHILE loop" << endl;
 		if (target->data < current->data)
 		{
-			//cout << "Inside IF statement" << endl;
 			temp->previous = current->previous;
 			current->previous->next = temp;
 			delete current;
