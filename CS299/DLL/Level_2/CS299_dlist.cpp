@@ -25,7 +25,7 @@ int swap (node * & head, node * & current, node * & temp)
 		temp->previous = current;
 		current->next = temp;
 
-		i = current->data + temp->data;
+		int i = current->data + temp->data;
 		return i;
 	}
 	return swap(head, current->next, temp);
