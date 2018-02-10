@@ -25,14 +25,6 @@ int remove_larger(node * & head)
 
 }
 
-/**
- * @brief      Find the end of the DLL and have tail point to it.
- *
- * @param      current  The current
- * @param      tail     The tail
- * @param      head     The head
- */
-
 
 /**
  * @brief      Going from head to tail, check if the value is larger than head,
@@ -99,7 +91,6 @@ int remove_every_other(node * & head)
 
 		if ((current->next == NULL) &&  (i % 2 == 1)) 	//Special case for tail node
 		{
-			tail = current;
 			current->previous->next = NULL;
 			delete temp;
 			i+=1;
@@ -114,7 +105,7 @@ int duplicate_2(node * & head)
 		return 0;
 
 	node * current = head;
-	node * tail;
+
 	int i;
 	while(current->next != NULL)
 	{
@@ -140,7 +131,6 @@ int duplicate_2(node * & head)
  			temp->previous = current;
 			temp->next = current->next;
 			current->next = temp;
-			tail = temp;
 			i += 1;
 			return i;
 		}
