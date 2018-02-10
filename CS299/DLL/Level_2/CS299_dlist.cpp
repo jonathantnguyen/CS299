@@ -31,6 +31,7 @@ int swap (node * & head, node * & current, node * & temp)
 		int i = a + b;
 		return i;
 		*/
+		return current->data;
 	}
 	return swap(head, current->next, temp);
 }
