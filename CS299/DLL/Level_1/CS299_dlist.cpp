@@ -136,11 +136,13 @@ int duplicate_2(node * & head)
 		{
 			node * temp = new node;
 			temp->data = 2;
+ 			
  			temp->previous = current;
 			temp->next = current->next;
 			current->next = temp;
 			tail = temp;
 			i += 1;
+			return i;
 		}
 	}
 
