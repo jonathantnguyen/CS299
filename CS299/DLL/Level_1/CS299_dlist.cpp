@@ -70,7 +70,6 @@ int remove_every_other(node * & head)
 
 	node * current = head;
 	node * temp;
-	node * tail;
 	int i = 0;
 	int j = 0;
 	while(current->next != NULL)
