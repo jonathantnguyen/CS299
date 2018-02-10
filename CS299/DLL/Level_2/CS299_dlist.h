@@ -19,3 +19,4 @@ void destroy(node * &head); //supplied
 
 /* *****************YOUR TURN! ******************************** */
 /* place your prototype here */
+int swap_last_2(node * & head);
