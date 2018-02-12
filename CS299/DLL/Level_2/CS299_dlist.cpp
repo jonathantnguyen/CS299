@@ -39,7 +39,7 @@ int swap (node * & head, node * & current, node * & temp)
 			cout << "false" << endl;
 
 		cout <<"Current->next: " << current->next->data << endl;
-		temp->previous = tail;
+		temp->previous = current;
 		temp->next = NULL;
 		current->next = temp;
 
