@@ -42,11 +42,11 @@ int swap (node * & head, node * & current, node * & temp)
 		cout <<"Current->previous: " << current->previous->data << endl;
 		temp->previous = current;
 		cout <<"Temp->previous (should be current): " << temp->previous->data << endl;
-		//temp->next = NULL;
-		//current->next = temp;
+		current->next = temp;
+		temp->next = NULL;
 
 
-		int a = temp->data; //temp->data;
+		int a = temp->data;
 		int b = current->data;
 		int i = a + b;
 		return i;
