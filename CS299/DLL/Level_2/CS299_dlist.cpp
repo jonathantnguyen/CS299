@@ -1,6 +1,6 @@
 #include "CS299_dlist.h"
 
-int swap (node * & head, node * & current, node * & temp);
+int swap (node * & head, node * & current);
 
 int swap_last_2(node * & head)
 {
@@ -14,8 +14,10 @@ int swap_last_2(node * & head)
 
 }
 
-int swap (node * & head, node * & current, node * & temp)
+int swap (node * & head, node * & current)
 {
+	node * temp = current;
+
 	if(current->next == NULL)
 	{
 		cout << "Last Node: " <<current->data << endl;
@@ -49,9 +51,10 @@ int swap (node * & head, node * & current, node * & temp)
 		int i = a + b;
 		return i;
 	}
+	
 	else
 	{
-	return swap(head, current->next, temp);	
+	return swap(head, current->next);	
 	}
 	
 
