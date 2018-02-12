@@ -10,7 +10,7 @@ int swap_last_2(node * & head)
 	 node * temp;
 	 node * current = head;
 
-	 return swap(head, current, temp);
+	 return swap(head, current);
 
 }
 
