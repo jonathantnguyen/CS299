@@ -17,8 +17,11 @@ int swap_last_2(node * & head)
 int swap (node * & head, node * & current, node * & temp)
 {
 
-	if(current->next == NULL)
+	if(current->next != NULL)
 	{
+		return swap(head, current->next, temp)
+	}
+	
 		cout << "Last Node: " <<current->data << endl;
 		cout << "2nd Last Node: " <<current->previous->data << endl;
 		
@@ -38,6 +41,7 @@ int swap (node * & head, node * & current, node * & temp)
 			cout <<"true"<<endl;
 		else 
 			cout << "false" << endl;
+		
 		cout << "Current Data: " << current->data << endl;
 		cout <<"Current->previous: " << current->previous->data << endl;
 		temp->previous = current;
@@ -50,12 +54,5 @@ int swap (node * & head, node * & current, node * & temp)
 		int b = current->data;
 		int i = a + b;
 		return i;
-	}
-	
-	else
-	{
-		return swap(head, current->next, temp);	
-	}
-	
 
 }
