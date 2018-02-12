@@ -25,8 +25,19 @@ int swap (node * & head, node * & current, node * & temp)
 		//cout << "No Change: temp->previous->next->data: " << temp->previous->next->data << endl;
 		temp->previous->next = current;
 		//cout << "New Pointer: temp->previous->next->data: " << temp->previous->next->data << endl;
+		
 		if (current->next == NULL)
 			cout <<"true"<<endl;
+		else 
+			cout << "false" << endl;
+
+		current->next = temp->previous
+		if (current->next == NULL)
+			cout <<"true"<<endl;
+		else 
+			cout << "false" << endl;
+
+		cout <<"Current->next: " << current->next->data << endl;
 		/*
 		current->previous = temp->previous;
 		temp->previous = current;
