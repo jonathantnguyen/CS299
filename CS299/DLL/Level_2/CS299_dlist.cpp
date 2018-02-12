@@ -1,6 +1,6 @@
 #include "CS299_dlist.h"
 
-int swap (node * & head, node * & current, node * & head);
+int swap (node * & head, node * & current, node * & temp);
 
 int swap_last_2(node * & head)
 {
