@@ -19,7 +19,7 @@ int swap (node * & head, node * & current, node * & temp)
 
 	if(current->next != NULL)
 	{
-		return swap(head, current->next, temp)
+		return swap(head, current->next, temp);
 	}
 	
 		cout << "Last Node: " <<current->data << endl;
