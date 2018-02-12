@@ -54,7 +54,7 @@ int swap (node * & head, node * & current)
 	
 	else
 	{
-	return swap(head, current->next);	
+		return swap(head, current->next);	
 	}
 	
 
