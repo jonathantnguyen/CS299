@@ -32,26 +32,27 @@ int swap (node * & head, node * & current, node * & temp)
 			cout << "false" << endl;
 
 		current->next = temp->previous;
-		
+
 		if (current->next == NULL)
 			cout <<"true"<<endl;
 		else 
 			cout << "false" << endl;
 
 		cout <<"Current->next: " << current->next->data << endl;
-		/*
-		current->previous = temp->previous;
 		temp->previous = current;
 		temp->next = NULL;
 		current->next = temp;
-		*/
+
 
 		int a = temp->data; //temp->data;
 		int b = current->data;
 		int i = a + b;
 		return i;
 	}
-
-	return swap(head, current->next, temp);
+	else
+	{
+	return swap(head, current->next, temp);	
+	}
+	
 
 }
