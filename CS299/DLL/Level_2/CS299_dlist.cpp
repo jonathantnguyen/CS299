@@ -69,7 +69,7 @@ int swap (node * & head, node * & current, node * & temp)
 			cout << "false" << endl;
 
 		current->next = temp;
-		
+
 		if (current->next == NULL)
 			cout <<"true"<<endl;
 		else 
@@ -82,6 +82,8 @@ int swap (node * & head, node * & current, node * & temp)
 		int i = a + b;
 		return i;
 	}
-
-	return swap(head, current->next, temp);
+	else
+	{
+			return swap(head, current->next, temp);
+	}
 }
