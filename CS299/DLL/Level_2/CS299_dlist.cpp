@@ -18,9 +18,9 @@ int swap (node * & current)
 	if (current->next == NULL)
 	{
 
-		current->previous->next = NULL // 2nd to last node NEXT to NULL
+		current->previous->next = NULL; // 2nd to last node NEXT to NULL
 		current->previous->previous->next = current; //3rd to last node NEXT to Current
-		current->next = current->previous //Current NEXT to 2nd to last node
+		current->next = current->previous; //Current NEXT to 2nd to last node
 		current->previous->previous = current;// 2nd to last PREVIOUS to Current
 		current->previous-> = current->previous->previous; //Current PREVIOUS to 3rd to last node
 
