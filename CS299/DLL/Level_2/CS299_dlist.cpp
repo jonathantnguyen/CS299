@@ -1,31 +1,30 @@
 #include "CS299_dlist.h"
 
-int swap (node * & head, node * & current, node * & temp);
+int swap (node * & current);
 
 int swap_last_2(node * & head)
 {
 	 if(!head)
 	 	return 0;
 
-	 node * temp;
 	 node * current = head;
 
-	 return swap(head, current, temp);
+	 return swap(current);
 
 }
-/*
-int swap (node * & head, node * & current, node * & temp)
+
+int swap (node * & current)
 {
+	node * temp;
 
 	if (current->next == NULL)
 	{
 		temp = current->previous;
-		current->next = temp;
-		current->previous = temp->previous;
-		
 		temp->previous->next = current;
+		current->previous = temp->previous
 		temp->previous = current;
-		temp->next = NULL;
+		temp->next = NULL
+		current
 
 		int a = temp->data;
 		int b = current->data;
@@ -34,13 +33,13 @@ int swap (node * & head, node * & current, node * & temp)
 	}
 	else
 	{
-		return swap(head, current->next, temp);
+		return swap(current->next);
 	}
 }
 
-*/
 
 
+/*
 
 int swap (node * & head, node * & current, node * & temp)
 {
@@ -89,3 +88,4 @@ int swap (node * & head, node * & current, node * & temp)
 		return swap(head, current->next, temp);
 	}
 }
+*/
