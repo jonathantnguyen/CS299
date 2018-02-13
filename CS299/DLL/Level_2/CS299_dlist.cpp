@@ -22,7 +22,7 @@ int swap (node * & current)
 		current->previous->previous->next = current; //3rd to last node NEXT to Current
 		current->next = current->previous; //Current NEXT to 2nd to last node
 		current->previous->previous = current;// 2nd to last PREVIOUS to Current
-		current->previous-> = current->previous->previous; //Current PREVIOUS to 3rd to last node
+		current->previous = current->previous->previous; //Current PREVIOUS to 3rd to last node
 
 
 		int a = current->previous->data;
