@@ -15,16 +15,15 @@ int swap_last_2(node * & head)
 
 int swap (node * & current)
 {
-	node * temp;
-
 	if (current->next == NULL)
 	{
-		temp = current->previous;
-		temp->next = NULL;
-		temp->previous->next = current;
-		current->previous = temp->previous;
-		temp->previous = current;
-		current->next = temp;
+
+		current->previous->next = NULL // 2nd to last node NEXT to NULL
+		current->previous->previous->next = current; //3rd to last node NEXT to Current
+		current->next = current->previous //Current NEXT to 2nd to last node
+		current->previous->previous = current;// 2nd to last PREVIOUS to Current
+		current->previous-> = current->previous->previous; //Current PREVIOUS to 3rd to last node
+
 
 		int a = temp->data;
 		int b = current->data;
