@@ -19,8 +19,8 @@ int swap (node * & current)
 
 	if (current->next == NULL)
 	{
-		temp->next = NULL;
 		temp = current->previous;
+		temp->next = NULL;
 		temp->previous->next = current;
 		current->previous = temp->previous;
 		temp->previous = current;
