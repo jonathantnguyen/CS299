@@ -25,7 +25,7 @@ int swap (node * & current)
 		current->previous-> = current->previous->previous; //Current PREVIOUS to 3rd to last node
 
 
-		int a = temp->data;
+		int a = current->previous->data;
 		int b = current->data;
 		int i = a + b;
 		return i;
