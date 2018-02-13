@@ -13,19 +13,23 @@ int swap_last_2(node * & head)
 
 }
 
+/*
 int swap (node * & current)
 {
+	node * temp;
+
 	if (current->next == NULL)
 	{
+		cout << ""
+		temp = current->previous;
 
-		current->previous->next = NULL; // 2nd to last node NEXT to NULL
-		current->previous->previous->next = current; //3rd to last node NEXT to Current
-		current->next = current->previous; //Current NEXT to 2nd to last node
-		current->previous->previous = current;// 2nd to last PREVIOUS to Current
-		current->previous = current->previous->previous; //Current PREVIOUS to 3rd to last node
+		temp->next = NULL;
+		temp->previous->next = current;
+		current->previous = temp->previous;
+		temp->previous = current;
+		current->next = temp;
 
-
-		int a = current->previous->data;
+		int a = temp->data;
 		int b = current->data;
 		int i = a + b;
 		return i;
@@ -36,8 +40,7 @@ int swap (node * & current)
 	}
 }
 
-
-/*
+*/
 
 int swap (node * & current)
 {	
@@ -46,23 +49,34 @@ int swap (node * & current)
 	if (current->next == NULL)
 	{
 	
-																		cout << "Last Node: " <<current->data << endl;
-																		cout << "2nd Last Node: " <<current->previous->data << endl;
+																	cout << "Last Node: " <<current->data << endl;
+																	cout << "2nd Last Node: " <<current->previous->data << endl;
 		
 		temp = current->previous;
-																		cout << "No Change: temp->previous->next->data: " << temp->previous->next->data << endl;
+																		
+		if (temp->next == NULL)
+			cout << "temp->next: true" << endl;
+		else 
+			cout << "temp->next: false" << endl;
+
+		temp->next = NULL;
+
+		if (temp->next == NULL)
+			cout << "temp->next: true" << endl;
+		else 
+			cout << "temp->next: false" << endl;
+																	cout << "No change in 3rd to last (should be temp): " << temp-previous->next->data << endl;
 		temp->previous->next = current;
-																		cout << "New Pointer: temp->previous->next->data: " << temp->previous->next->data << endl;
+																	cout << "New Pointer: temp->previous->next->data: " << temp->previous->next->data << endl;
 
 		current->previous = temp->previous;
-
-																		cout << "Current Data: " << current->data << endl;
-																		cout <<"Current->previous: " << current->previous->data << endl;
+																	cout << "Current Data: " << current->data << endl;
+																	cout <<"Current->previous: " << current->previous->data << endl;
 		temp->previous = current;
-																		cout <<"Temp->previous (should be current): " << temp->previous->data << endl;
-
+																	cout <<"Temp->previous (should be current): " << temp->previous->data << endl;
+		
 		if (current->next == NULL)
-			cout <<"true"<<endl;
+			cout << "IS NULL? current->next: true"<<endl;
 		else 
 			cout << "false" << endl;
 
@@ -71,9 +85,8 @@ int swap (node * & current)
 		if (current->next == NULL)
 			cout <<"true"<<endl;
 		else 
-			cout << "false" << endl;
+			cout << "IS NULL? current->next: false" << endl;
 
-		temp->next = NULL;
 
 																		cout << "temp->data: " << temp->data << endl;
 																		cout << "current->data" << current->data << endl;
@@ -87,5 +100,3 @@ int swap (node * & current)
 		return swap(current->next);
 	}
 }
-
-*/
