@@ -23,8 +23,8 @@ int swap (node * & current)
 		temp->previous->next = current;
 		current->previous = temp->previous
 		temp->previous = current;
-		temp->next = NULL
-		current
+		temp->next = NULL;
+		current->next = temp;
 
 		int a = temp->data;
 		int b = current->data;
