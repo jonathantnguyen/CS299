@@ -12,18 +12,18 @@ int swap_last_2(node * & head)
 	 return swap(current);
 
 }
-/*
+
 int swap (node * & current)
 {
 	node * temp;
 
 	if (current->next == NULL)
 	{
+		temp->next = NULL;
 		temp = current->previous;
 		temp->previous->next = current;
 		current->previous = temp->previous;
 		temp->previous = current;
-		temp->next = NULL;
 		current->next = temp;
 
 		int a = temp->data;
@@ -37,9 +37,8 @@ int swap (node * & current)
 	}
 }
 
-*/
 
-
+/*
 
 int swap (node * & current)
 {	
@@ -48,20 +47,20 @@ int swap (node * & current)
 	if (current->next == NULL)
 	{
 	
-		cout << "Last Node: " <<current->data << endl;
-		cout << "2nd Last Node: " <<current->previous->data << endl;
+																		cout << "Last Node: " <<current->data << endl;
+																		cout << "2nd Last Node: " <<current->previous->data << endl;
 		
 		temp = current->previous;
-		cout << "No Change: temp->previous->next->data: " << temp->previous->next->data << endl;
+																		cout << "No Change: temp->previous->next->data: " << temp->previous->next->data << endl;
 		temp->previous->next = current;
-		cout << "New Pointer: temp->previous->next->data: " << temp->previous->next->data << endl;
+																		cout << "New Pointer: temp->previous->next->data: " << temp->previous->next->data << endl;
 
 		current->previous = temp->previous;
 
-		cout << "Current Data: " << current->data << endl;
-		cout <<"Current->previous: " << current->previous->data << endl;
+																		cout << "Current Data: " << current->data << endl;
+																		cout <<"Current->previous: " << current->previous->data << endl;
 		temp->previous = current;
-		cout <<"Temp->previous (should be current): " << temp->previous->data << endl;
+																		cout <<"Temp->previous (should be current): " << temp->previous->data << endl;
 
 		if (current->next == NULL)
 			cout <<"true"<<endl;
@@ -77,8 +76,8 @@ int swap (node * & current)
 
 		temp->next = NULL;
 
-		cout << "temp->data: " << temp->data << endl;
-		cout << "current->data" << current->data << endl;
+																		cout << "temp->data: " << temp->data << endl;
+																		cout << "current->data" << current->data << endl;
 		int a = temp->data;
 		int b = current->data;
 		int i = a + b;
@@ -89,3 +88,5 @@ int swap (node * & current)
 		return swap(current->next);
 	}
 }
+
+*/
