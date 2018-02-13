@@ -20,14 +20,12 @@ int swap (node * & head, node * & current, node * & temp)
 	if (current->next == NULL)
 	{
 		temp = current->previous;
-		temp->previous->next = current;
-		cout << "current->data " << current->data << endl;
-		current->previous = temp->previous;
-		temp->previous = current;
 		current->next = temp;
+		current->previous = temp->previous;
+		temp->previous->next = current;
+		temp->previous = current;
 		temp->next = NULL;
-		cout << "temp->data: " << temp->data << endl;
-		cout << "current->data " << current->data << endl;
+
 		int a = temp->data;
 		int b = current->data;
 		int i = a + b;
