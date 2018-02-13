@@ -82,7 +82,7 @@ int swap (node * & current)
 		int a = temp->data;
 		int b = current->data;
 		int i = a + b;
-		return i;
+		return i; 
 	}
 	else
 	{
