@@ -12,7 +12,7 @@ int swap_last_2(node * & head)
 	 return swap(current);
 
 }
-
+/*
 int swap (node * & current)
 {
 	node * temp;
@@ -37,12 +37,13 @@ int swap (node * & current)
 	}
 }
 
+*/
 
 
-/*
 
-int swap (node * & head, node * & current, node * & temp)
-{
+int swap (node * & current)
+{	
+	node * temp;
 
 	if (current->next == NULL)
 	{
@@ -85,7 +86,6 @@ int swap (node * & head, node * & current, node * & temp)
 	}
 	else
 	{
-		return swap(head, current->next, temp);
+		return swap(current->next);
 	}
 }
-*/
