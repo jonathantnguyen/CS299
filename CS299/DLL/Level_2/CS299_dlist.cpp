@@ -84,6 +84,6 @@ int swap (node * & head, node * & current, node * & temp)
 	}
 	else
 	{
-			return swap(head, current->next, temp);
+		return swap(head, current->next, temp);
 	}
 }
