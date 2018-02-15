@@ -21,4 +21,4 @@ void destroy(node * head[]); //supplied
 /* *****************YOUR TURN! ******************************** */
 //Write your function prototype here:
 
-int find_longest(node ** head)
+int find_longest(node ** head);
