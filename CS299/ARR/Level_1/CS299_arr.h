@@ -5,6 +5,8 @@
 
 const int SIZE = 5;	//size of the array of head pointers
 
+using namespace std;
+
 struct node
 {
     int data;
