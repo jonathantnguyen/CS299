@@ -17,7 +17,6 @@ int find_longest(node ** head)
 			++j;
 		}
 		count[i] = j;
-		cout << count[i] << endl;
 		if(k < j)
 			k = j;
 	}
