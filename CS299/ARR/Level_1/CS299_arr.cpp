@@ -9,17 +9,16 @@ int find_longest(node ** head)
 	int count[SIZE];
 
 	for (int i = 0; i < SIZE; ++i)
-	{	int j = 0;
+	{	
+		int j = 0;
 
 		node * current = head[i];
 		while(current)
 		{
-
 			current = current->next;
 			++j;
 		}
-		 count[i] = j;
-		cout << count[i] << endl;
+		count[i] = j;
 		if(k < j)
 			k = j;
 	}
@@ -27,7 +26,7 @@ int find_longest(node ** head)
 	for (int j = 0; j < SIZE; ++j)
 	{
 		if(count[j] == k)
-			cout << "Index " << j << ": " << endl;
+			cout << "Index " << j << ": " << k << endl;
 	}
 
 return k;
