@@ -13,7 +13,7 @@ int main()
     //PLEASE PUT YOUR CODE HERE to call the functions
 
 
-    count =find_longest(head)
+    int count =find_longest(head)
     cout <<"Largest Length is: "<< count << endl;
     display_all(head);
     destroy(head);
