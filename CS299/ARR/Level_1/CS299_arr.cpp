@@ -5,6 +5,7 @@ int find_longest(node ** head)
 	if(!head)
 		return 0;
 	
+	int k = 0;
 	//int * count = 0;				
 	for (int i = 0; i < SIZE; ++i)
 	{	int j = 0;
