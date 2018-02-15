@@ -10,7 +10,7 @@ int find_longest(node ** head)
 	//int * count = 0;				
 	for (int i = 0; i < SIZE; ++i)
 	{
-		node * current = head[i]
+		node * current = head[i];
 		while(current)
 		{
 			current = current->next;
