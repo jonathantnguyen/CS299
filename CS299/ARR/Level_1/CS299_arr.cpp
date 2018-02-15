@@ -24,11 +24,11 @@ int find_longest(node ** head)
 			k = j;
 	}
 	
-	for (int i = 0; i < SIZE; i++)
+	for (int j = 0; j < SIZE; ++j)
 	{
 		if(count[i] == k)
-			cout << "Index " << i << ": " << endl;
+			cout << "Index " << j << ": " << endl;
 	}
-	
+
 return k;
 }
