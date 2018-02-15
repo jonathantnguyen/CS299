@@ -18,7 +18,7 @@ int find_longest(node ** head)
 			current = current->next;
 			++j;
 		}
-		 *count[i] = j;
+		 count[i] = j;
 		//cout << count[i] << endl;
 		if(k < j)
 			k = j;
