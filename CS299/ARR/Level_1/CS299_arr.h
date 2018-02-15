@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cstring>
 #include <cctype>
-#include <stdlib>
+#include <cstdlib>
 
 const int SIZE = 5;	//size of the array of head pointers
 
