@@ -34,8 +34,9 @@ int remove_last(node ** head)
 	int k = 0;
 	for (int i = 0; i < SIZE; i++)
 	{
-		node * temp = current;
 		node * current = head[i];
+		node * temp = current;
+		
 		if (!head[i])
 			break;
 		else
