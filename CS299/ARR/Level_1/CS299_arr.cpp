@@ -29,7 +29,7 @@ int find_longest(node ** head)
 return k;
 }
 
-int remove_last(node ** head, int size)
+int remove_last(node ** head)
 {	
 	int k = 0;
 	for (int i = 0; i < SIZE; i++)
