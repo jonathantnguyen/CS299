@@ -23,4 +23,4 @@ void destroy(node * head[]); //supplied
 //Write your function prototype here:
 
 int find_longest(node ** head);
-int remove_last(node **head, int size);
+int remove_last(node **head);
