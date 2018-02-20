@@ -82,3 +82,8 @@ int add_last(node ** head)
 	}
 	return (k+1);
 }
+
+int remove_allt(node ** head)
+{
+	
+}
