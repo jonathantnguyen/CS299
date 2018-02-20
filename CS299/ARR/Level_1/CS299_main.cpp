@@ -16,9 +16,11 @@ int main()
     //int count = find_longest(head);
     //cout << "Largest Length is: "<< count << endl;
 
-   	int count  = remove_last(head);
-   	cout << "NUmber of items removed: " << count << endl;
+   	//int count  = remove_last(head);
+   	//cout << "Number of items removed: " << count << endl;
 
+    int count = add_last(head);
+    cout << "Number of items added: " << count << endl;
     
     display_all(head);
     destroy(head);

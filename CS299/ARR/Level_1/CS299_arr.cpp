@@ -57,3 +57,27 @@ int remove_last(node ** head)
 	}
 	return k;
 }
+
+int add_last(node ** head)
+{
+	int k = 0;
+	for (int i = SIZE-1; i >= 0; i--)
+	{	
+		if (head[i] == NULL)
+			break;
+		else
+		{
+			node * current = head[i];
+			node * temp = new node;
+			temp->next = NULL;
+			temp = 1;
+			while(current->next)
+			{
+				k++;
+				current = current->next;
+			}
+			current->next = temp;
+			return k + 1;
+		}
+	}
+}

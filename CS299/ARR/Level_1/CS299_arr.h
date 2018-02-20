@@ -24,3 +24,4 @@ void destroy(node * head[]); //supplied
 
 int find_longest(node ** head);
 int remove_last(node **head);
+int add_last(node ** head);
