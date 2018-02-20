@@ -77,7 +77,8 @@ int add_last(node ** head)
 				current = current->next;
 			}
 			current->next = temp;
-			return k + 1;
+			i = 0;
 		}
 	}
+	return (k+1);
 }
