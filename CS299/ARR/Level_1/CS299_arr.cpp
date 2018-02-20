@@ -1,10 +1,7 @@
 #include "CS299_arr.h"
 
 int find_longest(node ** head)
-{
-	if(!head)
-		return 0;
-	
+{	
 	int k = 0;
 	int count[SIZE];
 
@@ -30,4 +27,32 @@ int find_longest(node ** head)
 	}
 
 return k;
+}
+
+int remove_last(node ** head, int size)
+{	
+	int k = 0;
+	for (int i = 0; i < SIZE; i++)
+	{
+		node * temp = current;
+		node * current = head[i];
+		if (!head[i])
+			break;
+		else
+		{
+			while(current)
+			{
+				if (current->next->next != NULL)
+					current = current->next;
+				else
+				{
+					temp = current->next->next;
+					delete temp;
+					current->next = NULL;
+					k++;
+				}
+			}
+		}
+	}
+	return k;
 }

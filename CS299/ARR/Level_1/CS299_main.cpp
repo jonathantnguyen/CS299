@@ -13,8 +13,12 @@ int main()
     //PLEASE PUT YOUR CODE HERE to call the functions
 
 
-    int count = find_longest(head);
-    cout << "Largest Length is: "<< count << endl;
+    //int count = find_longest(head);
+    //cout << "Largest Length is: "<< count << endl;
+
+   	int count  = remove_last(head);
+   	cout << "NUmber of items removed: " << count << endl;
+
     
     display_all(head);
     destroy(head);
