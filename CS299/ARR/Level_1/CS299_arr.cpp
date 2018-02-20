@@ -41,7 +41,7 @@ int remove_last(node ** head)
 			break;
 		else
 		{
-			while(current)
+			while(current->next)
 			{
 				if (current->next->next != NULL)
 					current = current->next;
