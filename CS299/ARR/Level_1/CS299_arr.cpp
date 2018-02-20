@@ -70,7 +70,7 @@ int add_last(node ** head)
 			node * current = head[i];
 			node * temp = new node;
 			temp->next = NULL;
-			temp = 1;
+			temp->data = 1;
 			while(current->next)
 			{
 				k++;
