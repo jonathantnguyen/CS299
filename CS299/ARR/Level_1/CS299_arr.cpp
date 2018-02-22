@@ -94,13 +94,14 @@ int remove_allt(node ** head)
 		{
 			node * current = head[i];
 			node * nxt_cur = current->next;
+			
 			while(nxt_cur)
 			{	
 				delete current;
 				current = nxt_cur;
 				nxt_cur = nxt_cur->next;
 				k++;
-				if (!nxt_cur)
+				if (nxt_cur)
 				{
 					delete nxt_cur;
 					k++;
