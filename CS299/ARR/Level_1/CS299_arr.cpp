@@ -84,6 +84,24 @@ int add_last(node ** head)
 }
 
 int remove_allt(node ** head)
-{
-	
+{	
+	int k = 0;
+	for (int i = 0; i < SIZE; i++)
+	{
+		if(head[i] == NULL)
+			break;
+		else
+		{
+			node * current = head[i];
+			node * nxt_cur = current->next;
+			while(next cur)
+			{	
+				delete current->data;
+				current = nxt_cur;
+				nxt_cur = nxt_cur->next;
+				k++;
+			}
+		}
+	}
+	return k;
 }
