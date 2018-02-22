@@ -103,7 +103,7 @@ int remove_allt(node ** head)
 			}
 		}
 		head[i]->next = NULL;
-		head[i] = NULL;
+		delete head[i];
 	}
 	return k;
 }
