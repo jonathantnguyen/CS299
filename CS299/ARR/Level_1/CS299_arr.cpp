@@ -96,12 +96,14 @@ int remove_allt(node ** head)
 			node * nxt_cur = current->next;
 			while(next_cur)
 			{	
-				delete current->data;
+				delete current;
 				current = nxt_cur;
 				nxt_cur = nxt_cur->next;
 				k++;
 			}
 		}
+		head[i]->next = NULL;
+		head[i] = NULL;
 	}
 	return k;
 }
