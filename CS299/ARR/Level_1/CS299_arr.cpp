@@ -98,7 +98,6 @@ int remove_allt(node ** head)
 			while(nxt_cur)
 			{	
 				current->next = NULL;
-				current = NULL;
 				delete current;
 				current = nxt_cur;
 				nxt_cur = nxt_cur->next;
@@ -111,6 +110,7 @@ int remove_allt(node ** head)
 				}
 			}
 		}
+		head[i]= NULL;
 	}
 	return k;
 }
