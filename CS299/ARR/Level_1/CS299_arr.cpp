@@ -107,7 +107,7 @@ int remove_allt(node ** head)
 				if (!nxt_cur)
 				{	
 					delete nxt_cur;
-					k++
+					k++;
 				}
 			}
 		}
