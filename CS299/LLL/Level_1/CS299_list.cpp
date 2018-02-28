@@ -148,7 +148,7 @@ float append(node *&head, int to_add)
 		if(current->next == NULL)
 		{
 			node * temp = new node;
-			temp->data = 13;
+			temp->data = to_add;
 			current->next = temp;
 			temp->next = NULL;
 			sumTotal += current->data;
