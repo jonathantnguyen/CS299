@@ -20,4 +20,5 @@ void destroy(node * head[]); //supplied
 /* *****************YOUR TURN! ******************************** */
 //Write your function prototype here:
 
+int display_all_but_last(node ** head);
 
