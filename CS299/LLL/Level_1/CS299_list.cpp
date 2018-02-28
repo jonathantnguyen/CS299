@@ -132,7 +132,7 @@ float append(node *&head, int to_add)
 {
 	float sumTotal = 0;
 	float avg;
-	int i;
+	int i = 0;
 
 	if(!head)
 	{
