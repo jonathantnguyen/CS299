@@ -131,6 +131,7 @@ return statement;
 float append(node *&head, int to_add)
 {
 	float sumTotal = 0;
+	float avg;
 	int i;
 
 	if(!head)
@@ -156,5 +157,6 @@ float append(node *&head, int to_add)
 		}
 		current = current->next;
 	}
-	return (sumTotal/i);
+	avg = (sumTotal/i);
+	return avg;
 }
