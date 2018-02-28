@@ -11,7 +11,8 @@ int main()
     display_all(head);
 
     //PLEASE PUT YOUR CODE HERE to call the functions
-
+    int count = display_all_but_last(head);
+    cout << "Number of nodes displayed: " << count << endl;
 
     
 
