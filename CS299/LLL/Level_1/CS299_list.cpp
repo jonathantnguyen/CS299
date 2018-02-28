@@ -154,6 +154,7 @@ float append(node *&head, int to_add)
 			sumTotal += current->data;
 			i++;
 		}
+		current = current->next;
 	}
 	return (sumTotal/i);
 }
