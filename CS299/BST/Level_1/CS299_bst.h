@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstring>
 #include <cctype>
+#include <cstdlib>
+
 using namespace std;
 
 struct node
