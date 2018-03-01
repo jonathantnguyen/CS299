@@ -2,7 +2,6 @@
 
 int if_greater(node * & root, node * & current, int count);
 
-void traverse(node * & current);
 
 int count_greater_than(node * & root)
 {
@@ -15,26 +14,21 @@ int count_greater_than(node * & root)
 		return 0;
 	}
 	current = root->right;
-	count(root, current, count);
+	if_greater(root, current, count);
 
 	return count;
 }
 
 int if_greater(node * & root, node * & current, int count)
-{
+{	
 	if(current->data > root->data)
 	{
 		count++;
 	}
 
-}
-
-void traverse(node * & current)
-{
 	if(current->right != NULL)
 	{
-		if_greater(root, current, count);
-		return traverse(node * & current);
+		return if_greater(root, current->right, count)
 	}
 	else
 	{
@@ -42,9 +36,13 @@ void traverse(node * & current)
 	}
 	if(current->left != NULL)
 	{
-		if_greater(root, current, count);
-		return traverse(node * & current);
+
+		return if_greater(root, current->left, count)
+	}
+	else
+	{
+		return 0;
 	}
 
-	return 0;
+	return count;
 }
