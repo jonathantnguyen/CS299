@@ -2,7 +2,6 @@
 
 int if_greater(node * & root, node * & current, int count);
 
-
 int count_greater_than(node * & root)
 {
 	node * current = root;

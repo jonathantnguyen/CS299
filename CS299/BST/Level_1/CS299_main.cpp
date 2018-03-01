@@ -9,8 +9,6 @@ int main()
     /*  PLACE YOUR FUNCTION CALL HERE */
     int count;
 
-
-
     count = count_greater_than(root);
     cout << "Number of nodes with data greater than the root's data: " << count << endl;
 
