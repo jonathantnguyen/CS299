@@ -48,8 +48,8 @@ int main()
     */
     int to_add = 10;
 
-    int avg = append(head, to_add);
-    cout << avg << endl;
+    float avg = append(head, to_add);
+    cout << "New average: "<< avg << endl;
 
 
     display_all(head);
