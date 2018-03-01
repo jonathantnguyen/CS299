@@ -131,7 +131,7 @@ return statement;
 float append(node *&head, int to_add)
 {
 	int sumTotal = 0;
-	int i = 0;
+	float i = 0;
 
 	if(!head)
 	{
