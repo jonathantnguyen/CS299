@@ -158,4 +158,5 @@ float append(node *&head, int to_add)
 		}
 		current = current->next;
 	}
+return 0;
 }
