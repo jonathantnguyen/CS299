@@ -2,7 +2,7 @@
 
 int if_greater(node * & root, node * & current, int count);
 
-void traverse()
+void traverse(node * & current);
 
 int count_greater_than(node * & root)
 {
