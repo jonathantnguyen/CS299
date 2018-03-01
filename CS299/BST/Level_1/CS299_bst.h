@@ -17,5 +17,5 @@ void display_all(node *  root);  //supplied
 void destroy(node * & root); //supplied
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
  
-int count_greater_than(node * & root)
+int count_greater_than(node * & root);
 
