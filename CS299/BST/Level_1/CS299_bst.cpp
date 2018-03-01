@@ -28,7 +28,7 @@ int if_greater(node * & root, node * & current, int count)
 
 	if(current->right != NULL)
 	{
-		return if_greater(root, current->right, count)
+		return if_greater(root, current->right, count);
 	}
 	else
 	{
@@ -37,7 +37,7 @@ int if_greater(node * & root, node * & current, int count)
 	if(current->left != NULL)
 	{
 
-		return if_greater(root, current->left, count)
+		return if_greater(root, current->left, count);
 	}
 	else
 	{
