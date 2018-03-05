@@ -13,6 +13,7 @@ int count_greater_than(node * & root)
 		return 0;
 	}
 	
+	printf("Root: %i \n", root->data);
 	count++;
 
 	count = if_greater(root, current, count);
@@ -23,17 +24,18 @@ int count_greater_than(node * & root)
 int if_greater(node * & root, node * & current, int count)
 {
 
-	if (current->left != NULL)
-	{	
-		if_greater(root, current->left, count);
-		count++;
-	
-		if (current->right != NULL)
-		{
-			if_greater(root, current->right, count);
-			count ++;
-		}
+	if(!current)
+	{
+		return 0;
 	}
+	if (current->data > root->data)
+	{
+		/* code */
+	}
+
+	if_greater(root, current->left, count);
+
+	if_greater(root, current->right, count);
 		
 	return count;
 }
