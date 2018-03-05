@@ -24,7 +24,7 @@ int if_greater(node * & root, node * & current, int count)
 {
 	if (current->data > root->data)
 	{
-		*count++;
+		*count=+;
 	}
 
 	if (current->left != NULL)
