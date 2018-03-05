@@ -20,7 +20,7 @@ int count_greater_than(node * & root)
 
 int if_greater(node * & root, node * & current, int count)
 {	
-	if(current->data > root)
+	if(current->data > root->data)
 	{
 		count++;
 	}
