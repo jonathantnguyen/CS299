@@ -23,11 +23,11 @@ int if_greater(node * & current, int count)
 	
 	if (current->left != NULL)
 	{	
-		return if_greater(current->left, count++);
+		return if_greater(current->left, ++count);
 	
 		if (current->right != NULL)
 		{
-			return if_greater(current->right, count++);
+			return if_greater(current->right, ++count);
 		}
 	}
 		
