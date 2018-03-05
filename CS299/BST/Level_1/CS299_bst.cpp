@@ -1,50 +1,37 @@
 #include "CS299_bst.h"
 
-int if_greater(node * & root, node * & current, int count);
+int if_greater(node * & root, node * & current, node * & parent, int count);
 
 int count_greater_than(node * & root)
 {
 	node * current = root;
+	node * parent = current;
 
 	int count = 0;
 	
-	if(!root || root->right == NULL)
+	if(!root)
 	{
 		return 0;
 	}
-	current = root->right;
-	count = if_greater(root, current, count);
 
+	if_greater(root, current, parent, count)
 
 	return count;
 }
 
-int if_greater(node * & root, node * & current, int count)
-{	
-	node * previous = current;
-	if(current->data > root->data)
+int if_greater(node * & root, node * & current, node * & parent, int count)
+{
+	count++;
+	
+	if (current->left != NULL)
 	{
-		count++;
-	}
-
-	if(current->right != NULL)
-	{
-		return if_greater(root, current->right, count);
-	}
-	else
-	{	current = previous;
-		return 0;
-	}
-	if(current->left != NULL)
-	{
-
 		return if_greater(root, current->left, count);
+	
+		if (current->right != NULL)
+		{
+			return if_greater(root, current->right, count);
+		}
 	}
-	else
-	{
-		current = previous;
-		return 0;
-	}
-
+		
 	return count;
 }
