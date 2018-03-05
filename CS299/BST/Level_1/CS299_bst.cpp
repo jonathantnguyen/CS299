@@ -12,6 +12,8 @@ int count_greater_than(node * & root)
 	{
 		return 0;
 	}
+	
+	count++;
 
 	count = if_greater(root, current, count);
 
@@ -20,7 +22,7 @@ int count_greater_than(node * & root)
 
 int if_greater(node * & root, node * & current, int count)
 {
-	if(current->data > root->data)
+	if (current->data > root->data)
 	{
 		count++;
 	}
