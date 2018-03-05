@@ -1,6 +1,6 @@
 #include "CS299_bst.h"
 
-int if_greater(node * & root, node * & currentint count);
+int if_greater(node * & root, node * & current,int count);
 
 int count_greater_than(node * & root)
 {
