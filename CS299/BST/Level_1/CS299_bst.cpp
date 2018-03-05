@@ -1,6 +1,6 @@
 #include "CS299_bst.h"
 
-int if_greater(node * & root, node * & current);
+int if_greater(node * & root, node * & currentint count);
 
 int count_greater_than(node * & root)
 {
@@ -14,16 +14,14 @@ int count_greater_than(node * & root)
 	}
 	
 	cout << "Root: " << root->data << endl;
-	
-	count++;
 
-	count = if_greater(root, current);
+	count = if_greater(root, curren, count);
 
 	return count;
 }
 
 
-int if_greater(node * & root, node * & current)
+int if_greater(node * & root, node * & current, int count)
 {
 	if(!current)
 	{
@@ -35,9 +33,9 @@ int if_greater(node * & root, node * & current)
 		count++;
 	}
 
-	if_greater(root, current->left);
+	if_greater(root, current->left, count);
 
-	if_greater(root, current->right);
+	if_greater(root, current->right, count);
 		
 	return count;
 }
