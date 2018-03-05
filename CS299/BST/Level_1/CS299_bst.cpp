@@ -13,7 +13,7 @@ int count_greater_than(node * & root)
 		return 0;
 	}
 	
-	printf("Root: %i \n", root->data);
+	cout << "Root: " << root->data << endl;
 	count++;
 
 	count = if_greater(root, current, count);
