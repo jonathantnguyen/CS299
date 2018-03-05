@@ -14,7 +14,7 @@ int count_greater_than(node * & root)
 		return 0;
 	}
 
-	count = if_greater(root, current, parent, count);
+	count = if_greater(root, current, count);
 
 	return count;
 }
