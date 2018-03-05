@@ -27,7 +27,7 @@ int if_greater(node * & root, node * & current)
 		return 0;
 	cout << "Current: " << current->data << endl;
 	if (current->data == root->data)
-		return 1 + if_greater(root, current->left, count) + if_greater(root, current->right, count);
+		return 1 + if_greater(root, current->left) + if_greater(root, current->right);
 	else
-		return 0 + if_greater(root, current->left, count) + if_greater(root, current->right, count);
+		return 0 + if_greater(root, current->left) + if_greater(root, current->right);
 }
