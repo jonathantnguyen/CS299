@@ -15,7 +15,7 @@ int count_greater_than(node * & root)
 	
 	cout << "Root: " << root->data << endl;
 
-	count = if_greater(root, curren, count);
+	count = if_greater(root, current, count);
 
 	return count;
 }
