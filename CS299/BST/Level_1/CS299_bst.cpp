@@ -1,9 +1,10 @@
 #include "CS299_bst.h"
 
-int if_greater(node * & root, node * & current);
-
 int add_all_leafs(node * & root, node * & current);
+int add(node * & current);
 
+
+int if_greater(node * & root, node * & current);
 int count_greater_than(node * & root)
 {
 	node * current = root;
