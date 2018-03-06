@@ -95,7 +95,7 @@ int traversal_count(node * & current)
 	{
 		return 0;
 	}
-
+	cout << "Left: " << left_depth << "Right: " << right_depth << endl;
 	int left_depth = traversal_count(current->left);
 	int right_depth = traversal_count(current->right);
 
