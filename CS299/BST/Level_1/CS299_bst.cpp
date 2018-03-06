@@ -99,7 +99,7 @@ int traversal_count(node * & current)
 	int right_depth = traversal_count(current->right);
 	if (left_depth > right_depth)
 	{
-		cout << "Left: " << left_depth << "Right: " << right_depth << endl;
+		cout << "Left: " << left_depth << " Right: " << right_depth << endl;
 
 		return (left_depth+1);
 	}
