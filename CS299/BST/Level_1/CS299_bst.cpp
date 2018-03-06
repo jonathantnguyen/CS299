@@ -77,16 +77,14 @@ int height_of_tree(node * & root)
 {
 	node * current = root;
 
-	int count = 0;
 	int height = 0;
-	int i = 0;
 
 	if (!root)
 	{
 		return 0;
 	}
 
-	count = traversal_count(current);
+	height = traversal_count(current);
 
 	return height;
 }
