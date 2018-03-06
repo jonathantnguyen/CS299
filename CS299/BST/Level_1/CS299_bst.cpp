@@ -4,6 +4,10 @@ int add_all_leafs(node * & root, node * & current);
 int add(node * & current);
 
 
+int height_of_tree(node * & root);
+int traversal_count(node * & current);
+
+
 int if_greater(node * & root, node * & current);
 int count_greater_than(node * & root)
 {
@@ -69,3 +73,40 @@ int add(node * & current)
 	}
 }
 
+int height_of_tree(node * & root)
+{
+	node * current = root;
+
+	int count = 0;
+	int height = 0;
+	int i = 0;
+
+	if (!root)
+	{
+		return 0;
+	}
+
+	count = traversal_count(current);
+
+	return height;
+}
+
+int traversal_count(node * & current)
+{
+	if (!current)
+	{
+		return 0;
+	}
+
+	int left_depth = traversal_count(current->left);
+	int right_depth = traversal_count(current->right);
+
+	if (left_depth > right_depth)
+	{
+		return (left_depth+1);
+	}
+	else
+	{
+		return (right_depth+1);
+	}
+}
