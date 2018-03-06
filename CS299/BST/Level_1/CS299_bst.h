@@ -2,6 +2,7 @@
 #include <cstring>
 #include <cctype>
 #include <cstdlib>
+#include <c.math>
 
 using namespace std;
 
@@ -19,4 +20,5 @@ void destroy(node * & root); //supplied
  
 int count_greater_than(node * & root);
 int add_all_leafs(node * & root);
+int height_of_tree(node * & root);
 
