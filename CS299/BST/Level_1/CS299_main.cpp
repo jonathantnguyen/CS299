@@ -7,13 +7,18 @@ int main()
     display_all(root);
 
     /*  PLACE YOUR FUNCTION CALL HERE */
-    int count;
-    int sum;
+    //int count;
+    //int sum;
+    int height;
 
     //count = count_greater_than(root);
     //cout << "Number of nodes with data greater than the root's data: " << count << endl;
-    sum = add_all_leafs(root);
-    cout << "The sum of every leaf's data: " << sum << endl;
+    //sum = add_all_leafs(root);
+    //cout << "The sum of every leaf's data: " << sum << endl;
+
+    height = height_of_tree(root);
+    cout << "Height of the BST: " << height << endl;
+
 
     display_all(root);
 
