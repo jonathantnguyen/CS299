@@ -58,7 +58,7 @@ int add(node * & current)
 		return 0;
 	}
 
-	if ((current->left != NULL) && (current->right != NULL))
+	if ((current->left == NULL) && (current->right == NULL))
 	{
 		cout << "Current: " << current->data << endl;
 		return current->data + add(current->left) + add(current->right);
