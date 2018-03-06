@@ -20,4 +20,6 @@ void destroy(node * & root); //supplied
 int count_greater_than(node * & root);
 int add_all_leafs(node * & root);
 int height_of_tree(node * & root);
+int find_successor(node * & root);
+
 

@@ -9,7 +9,8 @@ int main()
     /*  PLACE YOUR FUNCTION CALL HERE */
     //int count;
     //int sum;
-    int height;
+    //int height;
+    int value;
 
     //count = count_greater_than(root);
     //cout << "Number of nodes with data greater than the root's data: " << count << endl;
@@ -18,6 +19,9 @@ int main()
 
     height = height_of_tree(root);
     cout << "Height of the BST: " << height << endl;
+
+    value = find_successor(root);
+    cout << "Root's inorder successor: " << value <<endl;
 
 
     display_all(root);

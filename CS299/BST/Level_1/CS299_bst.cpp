@@ -7,6 +7,9 @@ int add(node * & current);
 int height_of_tree(node * & root);
 int traversal_count(node * & current);
 
+int find_successor(node * & root)
+
+
 
 int if_greater(node * & root, node * & current);
 int count_greater_than(node * & root)
@@ -89,7 +92,7 @@ int height_of_tree(node * & root)
 	return height;
 }
 
-int traversal_count(node * & current)
+int traversal_count(node * & current) // LEARN THIS, WHY IT WORKS
 {
 	if (!current)
 	{
@@ -110,4 +113,13 @@ int traversal_count(node * & current)
 		return (right_depth+1);
 	}
 
+}
+
+int find_successor(node * & root)
+{
+	if (!root)
+	{
+		return 0;
+	}
+	
 }
