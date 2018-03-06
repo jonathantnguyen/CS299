@@ -60,7 +60,7 @@ int add(node * & current)
 
 	if ((current->left != NULL) && (current->right != NULL))
 	{
-		return 1 + add(current->left) + add(current->right);
+		return current->data + add(current->left) + add(current->right);
 	}
 	else
 	{
