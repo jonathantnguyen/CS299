@@ -2,7 +2,6 @@
 #include <cstring>
 #include <cctype>
 #include <cstdlib>
-#include <c.math>
 
 using namespace std;
 
